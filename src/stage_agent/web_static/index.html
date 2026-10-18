@@ -129,6 +129,34 @@ details.full{margin-top:16px}details.full summary{cursor:pointer;font-weight:700
 .cimg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,42,74,.05),rgba(11,42,74,.55))}
 .cimg i{position:absolute;inset:0;background:inherit;animation:kb 22s ease-in-out infinite alternate}
 .b-viewers{background-image:url(/static/img/audience.jpg)}.b-decisions{background-image:url(/static/img/circuit.jpg)}
+
+.carwrap{position:relative;margin:6px calc(-1*clamp(16px,4vw,72px)) 34px;padding:10px 0 6px;background:linear-gradient(180deg,#fff,#f4f7fb 40%,#fff);overflow:hidden}
+.car{position:relative;height:clamp(560px,46vw,700px);--cw:min(46vw,820px)}
+.car .step{position:absolute;left:50%;top:34px;width:var(--cw);margin:0;border-radius:10px;opacity:0;pointer-events:none;
+ transform:translateX(-50%) scale(.6);transition:transform .95s cubic-bezier(.22,.8,.22,1),opacity .8s,box-shadow .8s,filter .8s;
+ box-shadow:0 10px 26px rgba(11,42,74,.12);will-change:transform}
+.car .step:hover{transform:translateX(-50%) scale(.6)}
+.car .step.c{opacity:1;pointer-events:auto;z-index:5;transform:translateX(-50%) scale(1.04);box-shadow:0 30px 70px rgba(11,42,74,.34);border-color:var(--gold)}
+.car .step.l,.car .step.r{opacity:.78;pointer-events:auto;z-index:3;cursor:pointer;filter:saturate(.8) brightness(.97)}
+.car .step.l{transform:translateX(calc(-50% - var(--cw)*.78)) scale(.8)}
+.car .step.r{transform:translateX(calc(-50% + var(--cw)*.78)) scale(.8)}
+.car .step.l:hover{transform:translateX(calc(-50% - var(--cw)*.78)) scale(.83);opacity:.95}
+.car .step.r:hover{transform:translateX(calc(-50% + var(--cw)*.78)) scale(.83);opacity:.95}
+.car .step .ph{height:clamp(220px,19vw,310px)}.car .step .no{font-size:56px;left:22px;bottom:14px}
+.car .step .tx{padding:20px 28px 26px}.car .step h3{font-size:26px;margin-bottom:8px}.car .step p{font-size:19px;line-height:1.6}
+.car .step.c .ph img{animation:kb 14s ease-in-out infinite alternate}
+.car .step .tx>*{opacity:.0;transform:translateY(14px);transition:opacity .7s .25s,transform .7s .25s}
+.car .step.c .tx>*,.car .step.l .tx>*,.car .step.r .tx>*{opacity:1;transform:none}
+.car .step.c .tx h3{animation:txin .8s .35s both}.car .step.c .tx p{animation:txin .9s .6s both}
+.cctl{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:6px}
+.cctl button{width:46px;height:46px;border-radius:50%;border:1px solid var(--navy);background:#fff;color:var(--navy);font-size:20px;cursor:pointer;transition:background .25s,color .25s,transform .2s}
+.cctl button:hover{background:var(--navy);color:#fff;transform:scale(1.08)}
+.dots{display:flex;gap:10px}.dots i{width:11px;height:11px;border-radius:50%;background:#c6cdd8;cursor:pointer;transition:width .4s,background .4s}.dots i.on{width:34px;border-radius:6px;background:var(--gold)}
+.cprog{height:3px;max-width:340px;margin:12px auto 0;background:#e3e7ee;border-radius:2px;overflow:hidden}.cprog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--navy))}
+@keyframes txin{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media(max-width:900px){.car{--cw:86vw;height:600px}.car .step.l{transform:translateX(calc(-50% - var(--cw)*.92)) scale(.8)}.car .step.r{transform:translateX(calc(-50% + var(--cw)*.92)) scale(.8)}
+ .car .step .ph{height:200px}.car .step h3{font-size:22px}.car .step p{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.car .step,.car .step .tx>*{transition:none!important}}
 </style></head><body>
 <div class="topbar"><div class="pad"><span>Applied AI Engineering &middot; Research Prototype &middot; Decide &middot; Act &middot; Verify &middot; Measure</span>
 <span class="dev"><small>Developed by:</small> <b>Jarpula Nirjala</b></span></div></div>
@@ -142,14 +170,14 @@ details.full{margin-top:16px}details.full summary{cursor:pointer;font-weight:700
 <section id="overview" class="on">
 <div class="band rv"><div><h2>Built for viewers in smaller cities and towns</h2><p>Most visits are short: a viewer opens the app, scrolls and leaves. One agent per viewer decides, in seconds, what to change, or whether to leave them alone, and later proves whether it helped.</p></div></div>
 <p class="sec">How it works</p><h2 class="rv">The decision loop</h2>
-<div class="steps">
+<div class="carwrap"><div class="car" id="car">
 <div class="step rv"><div class="ph"><img loading="lazy" alt="Analytics on a laptop" src="/static/img/analytics.jpg"><span class="no">01</span></div><div class="tx"><h3>Understand the viewer</h3><p>Every fact carries its source, time and freshness. Conflicts between profile, app setting and campaign link are resolved by explicit precedence and kept visible.</p></div></div>
 <div class="step rv"><div class="ph"><img loading="lazy" alt="A team planning together" src="/static/img/office.jpg"><span class="no">02</span></div><div class="tx"><h3>Choose one goal</h3><p>One measurable goal from the catalogue, with a deadline and a success signal, or an explained abstention. Unmeasurable goals are never chosen.</p></div></div>
 <div class="step rv"><div class="ph"><img loading="lazy" alt="Laptop and phone in use" src="/static/img/laptop-phone.jpg"><span class="no">03</span></div><div class="tx"><h3>Decide and act in time</h3><p>A personalised home page, one proportionate message, or nothing, inside a 60 second budget with at most 8 model and 20 tool calls.</p></div></div>
 <div class="step rv"><div class="ph"><img loading="lazy" alt="Circuit board close-up" src="/static/img/circuit.jpg"><span class="no">04</span></div><div class="tx"><h3>Verify independently</h3><p>A separate verifier checks eligibility, dialect, availability, consent, quiet hours, frequency, copy and holdout, and can reject any action.</p></div></div>
 <div class="step rv"><div class="ph"><img loading="lazy" alt="Server racks" src="/static/img/servers.jpg"><span class="no">05</span></div><div class="tx"><h3>Degrade safely</h3><p>When the model or the data store fails, a circuit breaker and cached facts keep decisions fast and safe. A smaller action beats a late or wrong one.</p></div></div>
 <div class="step rv"><div class="ph"><img loading="lazy" alt="Results dashboard" src="/static/img/dashboard.jpg"><span class="no">06</span></div><div class="tx"><h3>Prove the impact</h3><p>Intention-to-treat on randomized arms with confidence intervals. The biased served-versus-rest comparison is shown only for contrast.</p></div></div>
-</div>
+</div><div class="cctl"><button id="cprev" aria-label="Previous">&#10094;</button><div class="dots" id="cdots"></div><button id="cnext" aria-label="Next">&#10095;</button></div><div class="cprog"><i id="cbar"></i></div></div>
 <p class="sec">Results of the replay</p><div class="grid" id="kpis"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
 <div class="two"><div class="card rv"><p class="sec">Behaviour</p><h2>What the agent did with each trigger</h2><div id="mix"></div></div>
 <div class="card rv"><p class="sec">Measurement</p><h2>Impact: agent versus randomized holdout</h2><div id="impact"></div><div id="pilot"></div></div></div>
@@ -371,4 +399,20 @@ const FE=[ // [from,to,mode,cls,label]
  // staircase animation when visible
  const lad=document.getElementById("lad");if(lad){const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){lad.classList.add("in");lad.querySelectorAll(".st").forEach((s,i)=>s.style.transitionDelay=(i*140)+"ms");o.disconnect()}}),{threshold:.2});o.observe(lad)}
 })();
+
+// ---------------- coverflow carousel for the six steps
+(function(){const car=document.getElementById("car");if(!car)return;const cards=[...car.querySelectorAll(".step")],n=cards.length;let cur=0,timer=null,t0=0;const MS=5200;
+ const dots=document.getElementById("cdots"),bar=document.getElementById("cbar");
+ cards.forEach((c,i)=>{c.classList.remove("rv","in");const d=document.createElement("i");d.onclick=()=>go(i,true);dots.appendChild(d);c.onclick=()=>{if(c.classList.contains("l")||c.classList.contains("r"))go(i,true)}});
+ function paint(){cards.forEach((c,i)=>{let d=((i-cur)%n+n)%n;c.classList.remove("c","l","r");if(d===0)c.classList.add("c");else if(d===1)c.classList.add("r");else if(d===n-1)c.classList.add("l")});
+  [...dots.children].forEach((e,i)=>e.classList.toggle("on",i===cur))}
+ function go(i,user){cur=((i%n)+n)%n;paint();restart()}
+ function restart(){clearInterval(timer);t0=performance.now();bar.style.transition="none";bar.style.width="0";void bar.offsetWidth;
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;bar.style.transition="width "+MS+"ms linear";bar.style.width="100%";
+  timer=setInterval(()=>{cur=(cur+1)%n;paint();bar.style.transition="none";bar.style.width="0";void bar.offsetWidth;bar.style.transition="width "+MS+"ms linear";bar.style.width="100%"},MS)}
+ document.getElementById("cprev").onclick=()=>go(cur-1,true);document.getElementById("cnext").onclick=()=>go(cur+1,true);
+ const wrap=car.parentElement;wrap.onmouseenter=()=>{clearInterval(timer);bar.style.transition="none"};wrap.onmouseleave=()=>restart();
+ let sx=null;car.addEventListener("touchstart",e=>sx=e.touches[0].clientX,{passive:true});car.addEventListener("touchend",e=>{if(sx==null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(cur+(dx<0?1:-1),true);sx=null});
+ document.addEventListener("visibilitychange",()=>{if(document.hidden)clearInterval(timer);else restart()});
+ paint();restart();})();
 </script></body></html>
