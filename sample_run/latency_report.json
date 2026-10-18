@@ -1,0 +1,136 @@
+{
+  "slo_seconds": 60.0,
+  "hard_fail_seconds": 300.0,
+  "decisions_total": 2772,
+  "triggers_unique": 2679,
+  "all": {
+    "p50_s": 0.001,
+    "p95_s": 0.351,
+    "p99_s": 0.378,
+    "max_s": 1.801
+  },
+  "live_visits": {
+    "count": 2258,
+    "p50_s": 0.001,
+    "p95_s": 0.352,
+    "p99_s": 0.383,
+    "max_s": 1.801
+  },
+  "published_decisions": {
+    "count": 927,
+    "p50_s": 0.348,
+    "p95_s": 0.363,
+    "max_s": 1.801
+  },
+  "over_slo_60s": 0,
+  "over_5min_failures": 0,
+  "published_before_home_view_window": {
+    "note": "the simulator shows a page if it is published within 3-40 s of the app_open",
+    "published_within_3s": 927,
+    "published_within_40s": 927,
+    "total_published": 927
+  },
+  "budgets": {
+    "max_model_calls_configured": 8,
+    "max_tool_calls_configured": 20,
+    "max_model_calls_used": 2,
+    "max_tool_calls_used": 9,
+    "decisions_over_budget": 0
+  },
+  "queue": {
+    "p50_wait_s": 0.0,
+    "max_wait_s": 0.31040024757385254,
+    "shed_level_1": 0,
+    "shed_level_2": 0,
+    "dropped_overload": 0
+  },
+  "workers": 8,
+  "stale_buffered_triggers": {
+    "count": 424,
+    "max_age_h": 212.2
+  },
+  "fallbacks": {
+    "model_claim_rejected": 1,
+    "rules_only": 10,
+    "model_retry_after_malformed_output": 1,
+    "snapshot_cache": 2
+  },
+  "resilience_events": {
+    "model_unavailable": 6,
+    "model_breaker_open": 4,
+    "model_malformed_output": 1,
+    "store_timeout": 2,
+    "store_slow": 3
+  },
+  "model_gateway": {
+    "calls": 1015,
+    "ok": 1008,
+    "timeout": 0,
+    "unavailable": 6,
+    "malformed": 1,
+    "skipped_breaker": 4,
+    "skipped_budget": 0,
+    "retries": 1
+  },
+  "circuit_breaker_trips": 2,
+  "data_store": {
+    "timeouts": 2,
+    "slow_reads": 3
+  },
+  "phases": {
+    "model_provider_unavailable_2026-10-01T10:35:00.000Z": {
+      "window": [
+        "2026-10-01T10:35:00.000Z",
+        "2026-10-01T10:42:00.000Z"
+      ],
+      "detail": "every model call fails with HTTP 503",
+      "decisions": 23,
+      "p50_s": 0.001,
+      "p95_s": 0.151,
+      "max_s": 0.153,
+      "fallbacks": 10,
+      "published": 10
+    },
+    "user_data_store_degraded_2026-10-01T13:10:00.000Z": {
+      "window": [
+        "2026-10-01T13:10:00.000Z",
+        "2026-10-01T13:17:00.000Z"
+      ],
+      "detail": "p95 read latency 8 s and 20% of reads time out",
+      "decisions": 16,
+      "p50_s": 0.0,
+      "p95_s": 1.512,
+      "max_s": 1.801,
+      "fallbacks": 2,
+      "published": 4
+    }
+  },
+  "traffic_surge": {
+    "busiest_10min_window_start": "2026-10-01T14:59:52.393Z",
+    "triggers_in_window": 161,
+    "median_10min_triggers": 15.0,
+    "ratio_vs_median": 10.73,
+    "decisions": 166,
+    "p50_s": 0.001,
+    "p95_s": 0.35,
+    "max_s": 0.353,
+    "fallbacks": 0,
+    "published": 64
+  },
+  "model_faults_exercised": [
+    {
+      "trigger_event_id": "202cccb8-8127-465f-b2d0-038cf533197e",
+      "user_id": "U-01991",
+      "fault": "unsupported_claim",
+      "attempt": 1
+    },
+    {
+      "trigger_event_id": "76b138f6-0952-456d-904a-bd0d04497cf7",
+      "user_id": "U-02563",
+      "fault": "malformed_output",
+      "attempt": 1
+    }
+  ],
+  "latency_model_note": "decided_in_ms = measured real compute + modelled I/O (mock model call 320 ms, store read 12 ms, timeouts accounted virtually); published_at = deliver_at + queue wait + decided_in_ms",
+  "replay_wall_clock_s": 7.7
+}

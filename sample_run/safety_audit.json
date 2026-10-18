@@ -1,0 +1,13 @@
+{
+  "actions_audited": 1227,
+  "by_type": {
+    "home_page": 944,
+    "push": 146,
+    "whatsapp": 71,
+    "in_app_message": 66
+  },
+  "violations": 0,
+  "violations_by_kind": {},
+  "samples": [],
+  "clean": true
+}

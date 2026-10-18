@@ -1,0 +1,4 @@
+{"at": "2026-10-01T10:35:00.000Z", "event": "dependency_unavailable", "dependency": "model_provider", "until": "2026-10-01T10:42:00.000Z", "detail": "every model call fails with HTTP 503"}
+{"at": "2026-10-01T10:37:03.772Z", "event": "model_circuit_breaker_opened", "trips": 1}
+{"at": "2026-10-01T10:41:22.344Z", "event": "model_circuit_breaker_opened", "trips": 2}
+{"at": "2026-10-01T13:10:00.000Z", "event": "dependency_degraded", "dependency": "user_data_store", "until": "2026-10-01T13:17:00.000Z", "detail": "p95 read latency 8 s and 20% of reads time out"}

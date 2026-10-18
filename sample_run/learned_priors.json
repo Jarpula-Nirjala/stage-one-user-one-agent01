@@ -1,0 +1,47 @@
+{
+  "G07": {
+    "rate": 0.0351,
+    "n": 311,
+    "source": "holdout arm of this replay, judged with the corrected rules"
+  },
+  "G08": {
+    "rate": 0.2292,
+    "n": 46,
+    "source": "holdout arm of this replay, judged with the corrected rules"
+  },
+  "G02": {
+    "rate": 0.1307,
+    "n": 197,
+    "source": "holdout arm of this replay, judged with the corrected rules"
+  },
+  "G01": {
+    "rate": 0.3019,
+    "n": 51,
+    "source": "holdout arm of this replay, judged with the corrected rules"
+  },
+  "G05": {
+    "rate": 0.08,
+    "n": 48,
+    "source": "holdout arm of this replay, judged with the corrected rules"
+  },
+  "G06": {
+    "rate": 0.1538,
+    "n": 63,
+    "source": "holdout arm of this replay, judged with the corrected rules"
+  },
+  "G09": {
+    "rate": 0.25,
+    "n": 10,
+    "source": "holdout arm of this replay, judged with the corrected rules"
+  },
+  "G12": {
+    "rate": 0.6316,
+    "n": 17,
+    "source": "holdout arm of this replay, judged with the corrected rules"
+  },
+  "G04": {
+    "rate": 0.3333,
+    "n": 1,
+    "source": "holdout arm of this replay, judged with the corrected rules"
+  }
+}

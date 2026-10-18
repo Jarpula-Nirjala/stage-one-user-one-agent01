@@ -1,0 +1,10838 @@
+{
+ "U-00003": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-00004": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 1
+ },
+ "U-00012": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00014": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00022": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00023": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-00028": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00029": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00035": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-00037": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00039": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00040": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00044": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00045": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00050": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00055": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00057": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00061": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00062": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00064": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00067": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00068": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00069": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00070": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00071": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00072": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00073": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00074": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00075": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00080": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00084": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 3,
+  "actions": 1
+ },
+ "U-00089": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00094": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00095": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00096": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00097": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00104": {
+  "arm": "agent",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00106": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00108": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00116": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00117": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00118": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00119": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-00130": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00133": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00134": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00137": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00142": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00145": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00147": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00148": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00150": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00151": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00156": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00157": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00161": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00164": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00166": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00167": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00168": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00170": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00172": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00175": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00176": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00179": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00180": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00181": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00182": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00183": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00186": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00187": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00189": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00190": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-00191": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00192": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-00198": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00199": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00203": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00206": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00207": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00208": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00210": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00211": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00212": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00216": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00218": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00220": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00221": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-00225": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00229": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00230": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00232": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00233": {
+  "arm": "holdout",
+  "analysis_goal": "G09",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00238": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00239": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00243": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00245": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00247": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00251": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00255": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-00259": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00260": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00261": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00264": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00267": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00270": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00273": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00277": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00282": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00284": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 7,
+  "actions": 4
+ },
+ "U-00288": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00289": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00290": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00294": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-00300": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-00304": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00305": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00306": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-00307": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00309": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00312": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00313": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00315": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00318": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00320": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00321": {
+  "arm": "agent",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00325": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00326": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00327": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00329": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00330": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00331": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00334": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00335": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-00340": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 3,
+  "actions": 1
+ },
+ "U-00343": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-00347": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00348": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00354": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00356": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00357": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00358": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00360": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-00364": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00369": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00370": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00371": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00372": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00373": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00374": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-00383": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00384": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00385": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00386": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00387": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00388": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00391": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00398": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00399": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 2
+ },
+ "U-00400": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00410": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-00411": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00412": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00415": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00416": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00417": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-00423": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00427": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-00429": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00431": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00432": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 4
+ },
+ "U-00434": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00436": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00438": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-00439": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00441": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00442": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00445": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00448": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00458": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00460": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00461": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-00463": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00464": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00467": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00473": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00474": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00475": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00478": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00483": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-00484": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00495": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00496": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00497": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00500": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00501": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00502": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00504": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00505": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00509": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-00515": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00528": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00529": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00530": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00532": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00537": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00542": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00545": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00546": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00548": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00551": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00555": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00556": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00560": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00565": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00568": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00578": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00583": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00584": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00585": {
+  "arm": "agent",
+  "analysis_goal": "G09",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00591": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00594": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-00600": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00601": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00602": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00604": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00607": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00609": {
+  "arm": "holdout",
+  "analysis_goal": "G09",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00613": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00614": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00615": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-00618": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00619": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00620": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00623": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 5
+ },
+ "U-00624": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00629": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-00639": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00641": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00643": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00647": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00649": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00652": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00660": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00662": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00664": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00667": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 4
+ },
+ "U-00672": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00674": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00675": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00677": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00680": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00681": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00682": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00683": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00684": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00686": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00687": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00693": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00695": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00696": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00703": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00707": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00710": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00712": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00715": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00719": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00721": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00722": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00723": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00724": {
+  "arm": "agent",
+  "analysis_goal": "G04",
+  "decisions": 4,
+  "actions": 1
+ },
+ "U-00725": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00729": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-00731": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00733": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00738": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00739": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00741": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00742": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00745": {
+  "arm": "agent",
+  "analysis_goal": "G12",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00746": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00747": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00750": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00753": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00757": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00758": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00760": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00761": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00766": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00768": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00773": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00775": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00779": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00781": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 5,
+  "actions": 5
+ },
+ "U-00782": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00784": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00785": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-00793": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00795": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-00796": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00799": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00805": {
+  "arm": "agent",
+  "analysis_goal": "G09",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00808": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00815": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00818": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00820": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00821": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00827": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00829": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00834": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-00836": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00837": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-00839": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00846": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00851": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00853": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-00854": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00857": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00860": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00868": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00869": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00875": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00877": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00878": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00879": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00883": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00884": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00888": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00890": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-00891": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00892": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00893": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00894": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-00897": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00899": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00903": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00904": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00906": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00908": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 5
+ },
+ "U-00912": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00914": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00917": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 4
+ },
+ "U-00919": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00923": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00924": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00925": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00930": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00932": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-00934": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00937": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00939": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00945": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00946": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00948": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00949": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00952": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-00954": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00955": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00958": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 7,
+  "actions": 4
+ },
+ "U-00959": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00965": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-00969": {
+  "arm": "agent",
+  "analysis_goal": "G09",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00974": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00975": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-00976": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00978": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00979": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00983": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-00986": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00989": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-00991": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-00992": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-00996": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01000": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01001": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01004": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01006": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01009": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01015": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-01021": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01028": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01029": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01030": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01036": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01040": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01041": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01044": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01045": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01047": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01048": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-01055": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01062": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01063": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01068": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01073": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01074": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01079": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01080": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01084": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01086": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01087": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01088": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01089": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01090": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01092": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 5,
+  "actions": 3
+ },
+ "U-01098": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01101": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01103": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01105": {
+  "arm": "holdout",
+  "analysis_goal": "G09",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-01106": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01108": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01109": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01113": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01116": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01118": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01120": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01125": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01127": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01128": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01133": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01138": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01141": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01144": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-01147": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01148": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01151": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01155": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01157": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01159": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01163": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01164": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01166": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-01167": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01170": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01171": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 5,
+  "actions": 3
+ },
+ "U-01175": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01176": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01181": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01183": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01189": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01191": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01197": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01200": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01204": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01212": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01214": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01216": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01217": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01219": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 7,
+  "actions": 0
+ },
+ "U-01220": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01221": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01223": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01228": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01229": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01230": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01231": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01233": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01235": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01236": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01237": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01240": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01242": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-01249": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-01253": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-01254": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01256": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01259": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 3,
+  "actions": 1
+ },
+ "U-01261": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-01264": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-01265": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01267": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01268": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01270": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 6,
+  "actions": 0
+ },
+ "U-01273": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-01274": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-01275": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01285": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01291": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01292": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01296": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01300": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01302": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01303": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01305": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01306": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01309": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01314": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01321": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01322": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01323": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01324": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01325": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01326": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01327": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01330": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01338": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01339": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01340": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01341": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01343": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01345": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01346": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01349": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01354": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01356": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 3
+ },
+ "U-01358": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01359": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01362": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01363": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-01364": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01365": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01368": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01370": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01372": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01373": {
+  "arm": "holdout",
+  "analysis_goal": "G09",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-01376": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01379": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01382": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01386": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01388": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01399": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-01403": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01406": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01407": {
+  "arm": "agent",
+  "analysis_goal": "G12",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01409": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01412": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-01413": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01415": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-01419": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01421": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01424": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-01425": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01427": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01429": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01430": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01432": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01433": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01435": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01438": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01439": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01442": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01443": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01449": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01452": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01453": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-01456": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01460": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01468": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01472": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01474": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01483": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01486": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01487": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 4,
+  "actions": 3
+ },
+ "U-01488": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01489": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01491": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-01495": {
+  "arm": "agent",
+  "analysis_goal": "G09",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01499": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01510": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01512": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01513": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01518": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01520": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01528": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01534": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01537": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01538": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01540": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01541": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01543": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-01544": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01545": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01555": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01556": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 4
+ },
+ "U-01559": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-01560": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01561": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01562": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-01568": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01569": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01572": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01576": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01577": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01580": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01583": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01584": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01585": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01590": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01594": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01597": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01601": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-01602": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01603": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01604": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01605": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-01606": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01609": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01613": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01619": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01622": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01626": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01628": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01629": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01630": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-01632": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 4
+ },
+ "U-01642": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01644": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01649": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-01651": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-01652": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01655": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-01657": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01666": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-01667": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01668": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 3
+ },
+ "U-01672": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01674": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01675": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01676": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01682": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01683": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01686": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01688": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01690": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01691": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01697": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-01699": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01703": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01704": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01707": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01710": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01711": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-01712": {
+  "arm": "agent",
+  "analysis_goal": "G09",
+  "decisions": 5,
+  "actions": 2
+ },
+ "U-01716": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01717": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01718": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01720": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01727": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01732": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01733": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01735": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01739": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01743": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01745": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01749": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01750": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01753": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01756": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01766": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01769": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01771": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01774": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01775": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 4,
+  "actions": 2
+ },
+ "U-01777": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-01779": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01781": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01782": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01783": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01788": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01789": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01790": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01799": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01800": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01801": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01802": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01803": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 1
+ },
+ "U-01806": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-01810": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01811": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01812": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01815": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01818": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01820": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01822": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-01823": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01825": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-01826": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01827": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01829": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01831": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01832": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-01834": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01838": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01840": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-01851": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01863": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01867": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01869": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01872": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 3
+ },
+ "U-01876": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01878": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01883": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01884": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01885": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01886": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01892": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01896": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01903": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01911": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01912": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01917": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01919": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01924": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-01927": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01928": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01929": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01930": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01931": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01934": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01938": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-01940": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01945": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01946": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01947": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-01948": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-01953": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01958": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-01959": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01966": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01967": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01972": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01977": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-01982": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-01985": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01989": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-01991": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01998": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-01999": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02002": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02004": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02006": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02007": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02018": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02019": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02024": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02030": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02033": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02034": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-02043": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02044": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 3
+ },
+ "U-02045": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02046": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02050": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02051": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02057": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02058": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02060": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02061": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02068": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02070": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02071": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02074": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02076": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02079": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02080": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-02081": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02091": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02092": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02095": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02101": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02102": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02106": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02107": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02108": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02109": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02110": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02111": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02117": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02120": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02126": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02129": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-02130": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02136": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02139": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02140": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02142": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02143": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02148": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 4
+ },
+ "U-02149": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-02160": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02162": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02164": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02166": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02167": {
+  "arm": "agent",
+  "analysis_goal": "G09",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-02169": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02170": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02171": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02181": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02184": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02188": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02189": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02191": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02192": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02193": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02194": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-02198": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02201": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02202": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 5,
+  "actions": 2
+ },
+ "U-02205": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02212": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02214": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02215": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02217": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02219": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 3
+ },
+ "U-02226": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02230": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02231": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-02237": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02241": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02242": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02245": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02247": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-02249": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02251": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02253": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02257": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02259": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02266": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02269": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02270": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02271": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02274": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02276": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02282": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02285": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02286": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02287": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-02290": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02291": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02293": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02298": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02299": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02300": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02303": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02308": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02311": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-02312": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02314": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02317": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02318": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02320": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02332": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02333": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02335": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02338": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02342": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-02343": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02344": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 6,
+  "actions": 6
+ },
+ "U-02346": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02349": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-02353": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02354": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02357": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02358": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02359": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02360": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02364": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02372": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02374": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 3
+ },
+ "U-02375": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02383": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-02386": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02394": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-02395": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02400": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02402": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02405": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02407": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02409": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-02410": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02412": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-02419": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02420": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02426": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-02427": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02430": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02431": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02440": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02441": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02443": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02448": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02451": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02453": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02456": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02459": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02460": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02463": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02466": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-02467": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-02468": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02470": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02471": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02472": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02479": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02489": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02490": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02492": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02493": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-02494": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02497": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02498": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02499": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02509": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02511": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 6,
+  "actions": 3
+ },
+ "U-02520": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 4
+ },
+ "U-02523": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02528": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02530": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-02531": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02533": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02535": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02544": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02551": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02555": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02557": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-02558": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02563": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-02564": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02565": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02566": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02569": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02572": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02573": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02574": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 1
+ },
+ "U-02575": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02580": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02582": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-02594": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02595": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02601": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-02607": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02609": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02613": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02616": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02617": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02621": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02631": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02639": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02647": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02649": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02650": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-02653": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-02654": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02656": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02657": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-02661": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02662": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02665": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02667": {
+  "arm": "holdout",
+  "analysis_goal": "G09",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02669": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 4
+ },
+ "U-02670": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-02671": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02673": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02675": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02676": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02677": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02680": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02681": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02683": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-02688": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02691": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02692": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02693": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02695": {
+  "arm": "holdout",
+  "analysis_goal": "G04",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02699": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02702": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02703": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02705": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02707": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 3
+ },
+ "U-02714": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02716": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02721": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02722": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-02730": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02732": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02737": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02741": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02742": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02749": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02751": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-02755": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02758": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02762": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02769": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02770": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02774": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02779": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-02781": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02789": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02790": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02791": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02795": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02800": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02804": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-02806": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02808": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02810": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02812": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02814": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02817": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02819": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02822": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02825": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02826": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02830": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-02835": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02837": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-02842": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02844": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-02846": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02848": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02850": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-02851": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02855": {
+  "arm": "agent",
+  "analysis_goal": "G09",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02858": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-02859": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02861": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02862": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02873": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02877": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02881": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02888": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02893": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02894": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02896": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02898": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02902": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02903": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02904": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02905": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02907": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02913": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02914": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02917": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02918": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02921": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02928": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02929": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02930": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02932": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02934": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02939": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02940": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02941": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02942": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-02943": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02944": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02945": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02949": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-02951": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-02959": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02960": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-02968": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02969": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02970": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02971": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02973": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02974": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02978": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02980": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02981": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02989": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-02990": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-02992": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-02994": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-02999": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03000": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03003": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03006": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03007": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03008": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03009": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03011": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03016": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 6,
+  "actions": 0
+ },
+ "U-03017": {
+  "arm": "agent",
+  "analysis_goal": "G09",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-03019": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03022": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03024": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 3
+ },
+ "U-03026": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03031": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03032": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03034": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03035": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03038": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 1
+ },
+ "U-03039": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03044": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03046": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03047": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-03051": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03052": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03057": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03066": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03067": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03068": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03070": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03073": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03075": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03078": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03081": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03085": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03091": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 4
+ },
+ "U-03095": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03100": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 7,
+  "actions": 0
+ },
+ "U-03101": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03102": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03104": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03106": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03108": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03110": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03112": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03116": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03123": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03125": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03126": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03127": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03131": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03133": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03134": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03136": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03138": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03145": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03148": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03151": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03152": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03156": {
+  "arm": "holdout",
+  "analysis_goal": "G09",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03159": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03164": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03167": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03169": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03170": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03171": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03172": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03173": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03174": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03176": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03178": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03179": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03180": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 2
+ },
+ "U-03183": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03184": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03185": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03192": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03196": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03198": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03201": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03202": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03203": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03208": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03211": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03212": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03214": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03215": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03216": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03222": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03229": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03231": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03234": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03235": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03236": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03239": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03240": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03246": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03247": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03250": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03254": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-03255": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-03262": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03265": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03267": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03271": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03274": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03276": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03284": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03286": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03288": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03290": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03295": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03297": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03298": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 3
+ },
+ "U-03299": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03304": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03305": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03307": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03313": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03314": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03316": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03317": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03319": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03327": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03328": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03339": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 2
+ },
+ "U-03346": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03347": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03348": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03354": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03356": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03357": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03358": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03360": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03364": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03370": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 3
+ },
+ "U-03372": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03375": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03382": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03385": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03388": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03390": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03391": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03395": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03399": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03402": {
+  "arm": "holdout",
+  "analysis_goal": "G09",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03403": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03404": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03407": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03408": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03415": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03417": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03418": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03419": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03425": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03426": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03427": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03433": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03434": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03435": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03436": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03441": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03447": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03456": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03458": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03459": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03460": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03464": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03466": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03467": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03469": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03470": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 4
+ },
+ "U-03472": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03475": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03476": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03479": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03480": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03481": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03482": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03485": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03486": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03488": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03492": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03493": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03494": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03495": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03496": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03501": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-03503": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03504": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03506": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03509": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03511": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03514": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 7,
+  "actions": 5
+ },
+ "U-03515": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03519": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-03529": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03531": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03535": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03537": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03538": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03539": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03541": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03544": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03546": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03547": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03548": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-03549": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03550": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03553": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03554": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03555": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03560": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03562": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03564": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03567": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03569": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03578": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03580": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03581": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03584": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03586": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03592": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 3
+ },
+ "U-03595": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03602": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03603": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03604": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03610": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-03611": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03613": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03615": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 5
+ },
+ "U-03617": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03619": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03622": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 4,
+  "actions": 2
+ },
+ "U-03623": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03625": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03627": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03628": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03629": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03633": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03635": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03637": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03638": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03639": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03640": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03641": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03642": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03643": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03644": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03645": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 4
+ },
+ "U-03650": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03651": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03653": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03656": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03657": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03659": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03661": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03664": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-03667": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03668": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03669": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03676": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03678": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03679": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03680": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03682": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03683": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03684": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03685": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03689": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03690": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03692": {
+  "arm": "agent",
+  "analysis_goal": "G03",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03699": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03702": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03709": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03713": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03715": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03717": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03718": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03720": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03728": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03731": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03732": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03733": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03744": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03748": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03752": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03753": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-03754": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03755": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03756": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03758": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03761": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03762": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03766": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03772": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03773": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03775": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03783": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03787": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03790": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03792": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03796": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-03797": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03799": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03803": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03804": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03806": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03807": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03812": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-03814": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-03822": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03824": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03826": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-03828": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03831": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03835": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03838": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03839": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03841": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03844": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03845": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03850": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-03851": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03853": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03858": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03862": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03863": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03866": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03868": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03870": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-03873": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-03875": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03882": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03884": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03886": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03889": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03892": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03893": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03894": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03897": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03904": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03908": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-03909": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03911": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03912": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03921": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03926": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03927": {
+  "arm": "holdout",
+  "analysis_goal": "G09",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03928": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03930": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03933": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03935": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-03936": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03939": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03941": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03943": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03945": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03946": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-03948": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03950": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-03952": {
+  "arm": "holdout",
+  "analysis_goal": "G09",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03954": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03957": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-03958": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-03961": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03967": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03973": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03975": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-03982": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-03983": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03992": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-03998": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04002": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04003": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04004": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 3,
+  "actions": 1
+ },
+ "U-04005": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04006": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04008": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04011": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04016": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04018": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04026": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04027": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04031": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04033": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-04034": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04038": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04043": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04044": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04049": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04050": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04051": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04053": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04059": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-04060": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04064": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04068": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04069": {
+  "arm": "agent",
+  "analysis_goal": "G09",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04080": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04081": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04083": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04085": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04087": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 7,
+  "actions": 0
+ },
+ "U-04089": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04094": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04098": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04100": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-04102": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04103": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 4
+ },
+ "U-04107": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04110": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04114": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04118": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04119": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04120": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04121": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04122": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04130": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04138": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-04146": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04155": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04158": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-04167": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04170": {
+  "arm": "agent",
+  "analysis_goal": "G09",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04175": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04178": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 1
+ },
+ "U-04179": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-04181": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04184": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04185": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04187": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04190": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04195": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-04201": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04202": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04203": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04206": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04210": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04213": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04214": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04217": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04220": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04226": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04227": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 3
+ },
+ "U-04229": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04232": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04234": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04236": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04239": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04240": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04243": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04250": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04254": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04265": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04266": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04267": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04271": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04276": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04277": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04280": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04283": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04285": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04289": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04291": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04292": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04296": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04299": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04300": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04305": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04306": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04308": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04311": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04318": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04319": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04321": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04324": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04325": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04328": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04330": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04331": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04332": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04333": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04335": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04338": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04340": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04344": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-04347": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04348": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-04349": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04350": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04355": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04356": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04357": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04362": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04364": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04370": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04373": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04376": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 4
+ },
+ "U-04377": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04380": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04381": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04382": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04391": {
+  "arm": "holdout",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04393": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04394": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04398": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04404": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-04406": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04408": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04411": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04417": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04420": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04423": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04424": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04425": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04427": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04429": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 3
+ },
+ "U-04430": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04433": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04438": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04439": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04441": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04444": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04445": {
+  "arm": "holdout",
+  "analysis_goal": "G09",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04448": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04450": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04452": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04455": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04460": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04462": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04463": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04464": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04466": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04472": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04476": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04482": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04483": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04484": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04485": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04486": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04488": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04490": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04492": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04496": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-04502": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04503": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 6,
+  "actions": 4
+ },
+ "U-04506": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04508": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04516": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04525": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04529": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04530": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04531": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-04532": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04533": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04534": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04539": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04540": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04542": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 5
+ },
+ "U-04547": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04548": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04550": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04555": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04556": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 4
+ },
+ "U-04559": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04563": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 1
+ },
+ "U-04564": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04566": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04568": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04573": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04575": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04576": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04577": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04578": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04579": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04583": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04584": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04586": {
+  "arm": "agent",
+  "analysis_goal": "G12",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04587": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04595": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04598": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04601": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04602": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04607": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04608": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04611": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04619": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04620": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04621": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-04622": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04624": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04626": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04631": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04633": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04634": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04635": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 4,
+  "actions": 0
+ },
+ "U-04637": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04638": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04640": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04642": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 7,
+  "actions": 3
+ },
+ "U-04645": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04646": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04652": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04653": {
+  "arm": "agent",
+  "analysis_goal": "G09",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04657": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04658": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04659": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04663": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04667": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04672": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04673": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04680": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 3
+ },
+ "U-04682": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04683": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04684": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04685": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 6,
+  "actions": 4
+ },
+ "U-04686": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04687": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04689": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04695": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04697": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04698": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04703": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04709": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04711": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04714": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04715": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-04720": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 3
+ },
+ "U-04723": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04725": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04731": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04734": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04737": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04741": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04744": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 5,
+  "actions": 2
+ },
+ "U-04745": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04755": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04764": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04766": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04768": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04769": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04770": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04771": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04775": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-04778": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-04783": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04785": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04786": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04787": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04788": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04789": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04790": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04793": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04794": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04796": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04801": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04802": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04810": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04811": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04813": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04814": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-04817": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-04819": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04824": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04825": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04826": {
+  "arm": "holdout",
+  "analysis_goal": "G06",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04827": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04833": {
+  "arm": "agent",
+  "analysis_goal": "G01",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04835": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04838": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04839": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04841": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04842": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04844": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04845": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04848": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04849": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04850": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04854": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04856": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-04860": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04861": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04864": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04867": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04872": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04874": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04880": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04881": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04882": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04884": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04885": {
+  "arm": "agent",
+  "analysis_goal": "G09",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04886": {
+  "arm": "holdout",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04887": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04888": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-04889": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04892": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04895": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04896": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04898": {
+  "arm": "holdout",
+  "analysis_goal": "G01",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04900": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04907": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 4,
+  "actions": 3
+ },
+ "U-04910": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04915": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 3
+ },
+ "U-04916": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04918": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04919": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04923": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 5,
+  "actions": 0
+ },
+ "U-04925": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04926": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04927": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04929": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04932": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04934": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04935": {
+  "arm": "holdout",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04937": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 0
+ },
+ "U-04939": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04940": {
+  "arm": "agent",
+  "analysis_goal": "G06",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04941": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04942": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04943": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04945": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 5,
+  "actions": 3
+ },
+ "U-04947": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04948": {
+  "arm": "agent",
+  "analysis_goal": "G05",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04950": {
+  "arm": "agent",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04956": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 0,
+  "actions": 0
+ },
+ "U-04958": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04961": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-04962": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 2
+ },
+ "U-04963": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 1
+ },
+ "U-04968": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 2,
+  "actions": 2
+ },
+ "U-04974": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 3
+ },
+ "U-04976": {
+  "arm": "agent",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04978": {
+  "arm": "holdout",
+  "analysis_goal": "G02",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04984": {
+  "arm": "holdout",
+  "analysis_goal": null,
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04988": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 4,
+  "actions": 3
+ },
+ "U-04990": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 3,
+  "actions": 0
+ },
+ "U-04993": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 1
+ },
+ "U-04995": {
+  "arm": "agent",
+  "analysis_goal": "G08",
+  "decisions": 1,
+  "actions": 0
+ },
+ "U-04996": {
+  "arm": "agent",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 2
+ },
+ "U-04997": {
+  "arm": "holdout",
+  "analysis_goal": "G07",
+  "decisions": 1,
+  "actions": 0
+ }
+}

@@ -1,0 +1,1 @@
+{"decision_id": "D-000901", "viewer_id": "U-01991", "trigger_event_id": "202cccb8-8127-465f-b2d0-038cf533197e", "claim": {"goal_id": "G04", "eligible": true, "confidence": 0.97, "reason": "The user is on an active trial that ends tomorrow (confirmed in billing)."}, "accepted": false, "verifier": "unsupported_claim: no event or profile fact makes G04 eligible"}

@@ -1,0 +1,112 @@
+{
+  "config": {
+    "max_model_calls": 8,
+    "max_tool_calls": 20,
+    "latency_slo_s": 60.0,
+    "latency_hard_fail_s": 300.0,
+    "model_provider": "mock",
+    "model_call_policy": "always",
+    "model_timeout_s": 2.5,
+    "model_retries": 1,
+    "model_mock_latency_ms": 320.0,
+    "breaker_failures": 3,
+    "breaker_cooldown_s": 60.0,
+    "fault_persists_on_retry": false,
+    "store_read_ms": 12.0,
+    "store_timeout_ms": 1500.0,
+    "degraded_store_p95_ms": 8000.0,
+    "degraded_store_timeout_rate": 0.2,
+    "workers": 8,
+    "shed_wait_s": 8.0,
+    "shed_minimal_wait_s": 25.0,
+    "tool_ms": 1.5,
+    "stale_trigger_s": 600.0,
+    "aging_trigger_s": 120.0,
+    "snapshot_fresh_h": 36.0,
+    "last_setting_max_age_d": 14.0,
+    "recent_lapse_days": 30,
+    "new_user_days": 7,
+    "second_day_days": 2,
+    "absence_days": 14,
+    "series_idle_days": 3,
+    "habit_lookback_days": 14,
+    "new_release_days": 30,
+    "allow_windowed_never_claims": true,
+    "goal_weights": {
+      "G04": 100.0,
+      "G01": 92.0,
+      "G06": 86.0,
+      "G02": 82.0,
+      "G12": 78.0,
+      "G07": 75.0,
+      "G03": 70.0,
+      "G05": 60.0,
+      "G09": 55.0,
+      "G08": 50.0
+    },
+    "page_ttl_min": 120,
+    "max_rows": 6,
+    "min_row_titles": 3,
+    "max_row_titles": 10,
+    "target_row_titles": 8,
+    "avoid_expiring_within_min": 120,
+    "max_messages_per_7d": 2,
+    "message_lead_min": 25,
+    "message_goals": [
+      "G04",
+      "G06",
+      "G07",
+      "G01",
+      "G12"
+    ],
+    "min_open_without_play_for_push": 0.5,
+    "send_start_h": 8,
+    "send_end_h": 22,
+    "use_priors": true
+  },
+  "goal_rule_log": [
+    {
+      "goal_id": "G03",
+      "at": "2026-10-01T08:30:00.000Z",
+      "old": {
+        "event": "app_open",
+        "kind": "later_day",
+        "n": 1,
+        "version": 1,
+        "text": "on a later IST calendar day than the goal start",
+        "effective_from": null
+      },
+      "new": {
+        "event": "play_started",
+        "kind": "later_day",
+        "n": 1,
+        "version": 2,
+        "text": "on a later IST calendar day within the window",
+        "effective_from": "2026-10-01T08:30:00.000Z"
+      },
+      "retroactive_to_open_goals": true,
+      "note": "Correction from the analytics owner: an app open alone was never meant to count as a return."
+    }
+  ],
+  "counters": {
+    "triggers": 2769,
+    "holdout_decisions": 1092,
+    "duplicate_live_events": 7,
+    "stale_triggers": 424,
+    "duplicate_triggers": 90,
+    "session_dup": 103,
+    "dispatch_sent": 217,
+    "actions_cancelled": 3,
+    "replans": 3,
+    "withdrawal_pages_republished": 18,
+    "unsupported_claims_rejected": 1,
+    "rule_corrections": 1,
+    "model_fallbacks": 10,
+    "dispatch_skipped": 3,
+    "store_fallbacks": 2
+  },
+  "replay_window": [
+    "2026-09-30T18:30:01.789Z",
+    "2026-10-02T16:00:00.000Z"
+  ]
+}

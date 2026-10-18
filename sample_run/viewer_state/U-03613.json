@@ -1,0 +1,1 @@
+{"viewer_id":"U-03613","arm":"agent","analysis_goal":null,"active_goal":null,"goals":[],"decision_ids":["D-000272"],"action_ids":[],"outcomes":[],"learnings":[],"last_facts":null,"last_page":null,"conflicts_seen":[],"journal":[{"at":"2026-10-01T03:47:00.673Z","kind":"stale_trigger_state_update","event":"64c7d98f-0aa7-42d8-848f-2b90ecd6bb24","age_s":720106}],"actions":[]}

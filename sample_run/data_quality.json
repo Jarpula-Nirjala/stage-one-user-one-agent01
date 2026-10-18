@@ -1,0 +1,33 @@
+{
+  "catalogue_titles": 2014,
+  "catalogue_language_variant_slugs": 514,
+  "catalogue_injected_descriptions": 2,
+  "catalogue_titles_per_dialect": {
+    "d1": 696,
+    "d2": 512,
+    "d3": 16,
+    "d4": 352,
+    "d5": 285,
+    "d6": 153
+  },
+  "catalogue_with_end_date": 103,
+  "profile_rows": 4888,
+  "profile_users_with_two_rows": 30,
+  "history_lines": 142906,
+  "history_duplicate_deliveries": 2176,
+  "history_unique_events": 140730,
+  "history_offline_buffered_over_10min": 15402,
+  "history_wrong_phone_clock_over_10min": 3802,
+  "history_invalid_app_dialect": 7196,
+  "trigger_lines": 2769,
+  "trigger_duplicate_deliveries": 90,
+  "trigger_offline_buffered_over_10min": 432,
+  "trigger_wrong_clock_but_live": 61,
+  "trigger_invalid_app_dialect": 185,
+  "trigger_users": 1746,
+  "trigger_users_without_profile_row": 103,
+  "arms": {
+    "holdout": 2487,
+    "agent": 2513
+  }
+}

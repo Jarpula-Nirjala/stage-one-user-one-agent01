@@ -1,0 +1,1 @@
+{"viewer_id":"U-00210","arm":"holdout","analysis_goal":null,"active_goal":null,"goals":[],"decision_ids":["D-000132"],"action_ids":[],"outcomes":[],"learnings":[],"last_facts":null,"last_page":null,"conflicts_seen":[],"journal":[{"at":"2026-10-01T01:50:37.389Z","kind":"stale_trigger_state_update","event":"55ea3b01-87e1-4a9b-a6da-8f15c6214f07","age_s":410746}],"actions":[]}
