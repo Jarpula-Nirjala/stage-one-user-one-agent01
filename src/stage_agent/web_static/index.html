@@ -157,14 +157,24 @@ details.full{margin-top:16px}details.full summary{cursor:pointer;font-weight:700
 @media(max-width:900px){.car{--cw:86vw;height:600px}.car .step.l{transform:translateX(calc(-50% - var(--cw)*.92)) scale(.8)}.car .step.r{transform:translateX(calc(-50% + var(--cw)*.92)) scale(.8)}
  .car .step .ph{height:200px}.car .step h3{font-size:22px}.car .step p{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.car .step,.car .step .tx>*{transition:none!important}}
+
+.hx{overflow:hidden;max-height:420px;transition:max-height .7s ease,opacity .5s ease,margin .6s ease}
+header h1{transition:font-size .6s ease,margin .6s ease}header .pad{transition:padding .6s ease}header .heroimg{transition:opacity .6s}
+body.compact .hx{max-height:0;opacity:0;margin:0}
+body.compact header h1{font-size:clamp(24px,2.4vw,32px);margin:0}
+body.compact header .pad{padding-top:12px;padding-bottom:12px}
+body.compact header .heroimg{opacity:0;animation:none}
+body.compact .banner{height:130px;margin-bottom:18px}body.compact .banner h2{font-size:clamp(22px,2.4vw,30px)}
+body.compact main{padding-top:14px}
+@media(prefers-reduced-motion:reduce){.hx,header h1,header .pad{transition:none}}
 </style></head><body>
 <div class="topbar"><div class="pad"><span>Applied AI Engineering &middot; Research Prototype &middot; Decide &middot; Act &middot; Verify &middot; Measure</span>
 <span class="dev"><small>Developed by:</small> <b>Jarpula Nirjala</b></span></div></div>
-<header><div class="heroimg"></div><div class="pad"><div class="crest"><i>&#9670;</i> Lifecycle Agent Programme</div>
+<header><div class="heroimg"></div><div class="pad"><div class="hx"><div class="crest"><i>&#9670;</i> Lifecycle Agent Programme</div></div>
 <h1>One User, One Agent</h1>
-<p class="lead">Every viewer receives a dedicated agent that chooses one measurable goal, decides what to change (or to do nothing), acts within a strict latency budget, is checked by an independent verifier, and is judged against a randomized holdout.</p>
+<div class="hx"><p class="lead">Every viewer receives a dedicated agent that chooses one measurable goal, decides what to change (or to do nothing), acts within a strict latency budget, is checked by an independent verifier, and is judged against a randomized holdout.</p>
 <div class="rule"></div>
-<div class="chips"><span class="chip">Evidence with provenance</span><span class="chip">Independent verification</span><span class="chip">Safe degradation</span><span class="chip">Randomized holdout</span><span class="chip">Honest measurement</span></div></div></header>
+<div class="chips"><span class="chip">Evidence with provenance</span><span class="chip">Independent verification</span><span class="chip">Safe degradation</span><span class="chip">Randomized holdout</span><span class="chip">Honest measurement</span></div></div></div></header>
 <nav><div class="pad"><button data-t="overview" class="on">Overview</button><button data-t="demo">Live Demo</button><button data-t="viewers">Viewers</button><button data-t="decisions">Decisions</button><button data-t="dashboard">Dashboard</button><button data-t="impact">Impact Report</button><button data-t="final">Final Report</button><button data-t="arch">Architecture</button><button data-t="limits">Limitations</button><span class="who" id="who"></span></div></nav>
 <main class="pad">
 <section id="overview" class="on">
@@ -262,7 +272,7 @@ document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.query
  const t=b.dataset.t;if(t=="dashboard"&&!$("#dframe").getAttribute("src"))$("#dframe").src="/dashboard";
  if(docs[t]&&$(docs[t][0]).querySelector(".skel"))J(docs[t][1]).then(r=>$(docs[t][0]).innerHTML=r.html||"");
  if(t=="limits")loadLimits();
- history.replaceState(null,"","#"+t);window.scrollTo({top:0,behavior:"smooth"});reveal()});
+ document.body.classList.toggle("compact",t!="overview");history.replaceState(null,"","#"+t);window.scrollTo({top:0,behavior:"smooth"});reveal()});
 J("/api/summary").then(s=>{const st=s.status,P=s.impact.primary,L=s.latency;
 const K=[[s.decisions,"Decisions",""],[s.viewers,"Viewers",""],[st.PUBLISHED||0,"Published decisions",""],[st.HOLDOUT_NO_ACTION||0,"Holdout (zero action)",""],[st.NO_ACTION_STALE||0,"Stale buffered opens skipped",""],[L.published_decisions.p95_s,"p95 decision latency"," s"],[L.over_slo_60s,"Decisions over 60 s",""],[s.safety.violations,"Safety violations",""]];
 $("#kpis").innerHTML=K.map(k=>`<div class="kpi rv"><b data-to="${k[0]}" data-s="${k[2]}">0</b><span>${k[1]}</span></div>`).join("");reveal();
