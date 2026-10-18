@@ -78,53 +78,70 @@ def md_to_html(md: str) -> str:
 
 
 class State:
+    """Low-memory state: only a light row per decision is kept in RAM; full decisions are read from disk by byte offset."""
+
     def __init__(self, run: str):
+        from collections import Counter
         self.run = run
         self.lock = threading.Lock()
-        self.decisions = [json.loads(l) for l in open(os.path.join(run, "decisions.jsonl"), encoding="utf-8")]
-        self.by_id = {d["decision_id"]: d for d in self.decisions}
+        self.path = os.path.join(run, "decisions.jsonl")
+        self.rows, self.off, self.by_viewer = [], {}, {}
+        st, goals = Counter(), Counter()
+        with open(self.path, "rb") as f:
+            pos = 0
+            for raw in f:
+                n = len(raw)
+                if raw.strip():
+                    d = json.loads(raw)
+                    did = d["decision_id"]
+                    g = (d.get("goal") or {}).get("id")
+                    self.off[did] = (pos, n)
+                    self.by_viewer.setdefault(d["viewer_id"], []).append(did)
+                    self.rows.append({"id": did, "viewer": d["viewer_id"], "arm": d.get("arm"), "status": d["status"], "action": d["action"], "goal": g,
+                                      "conf": d.get("confidence"), "lat": d.get("latency_s"), "at": d["trigger"]["deliver_at"],
+                                      "reason": (d.get("no_action_reason") or "")[:160]})
+                    st[d["status"]] += 1
+                    if d["status"] == "PUBLISHED":
+                        goals[str(g)] += 1
+                pos += n
+        self._st, self._goals = st, goals
         self.index = json.load(open(os.path.join(run, "viewer_state", "_index.json"), encoding="utf-8"))
-        self.by_viewer = {}
-        for d in self.decisions:
-            self.by_viewer.setdefault(d["viewer_id"], []).append(d["decision_id"])
         self.summary = self._summary()
+
+    def decision(self, did):
+        o = self.off.get(did)
+        if not o:
+            return None
+        with open(self.path, "rb") as f:
+            f.seek(o[0])
+            return json.loads(f.read(o[1]))
 
     def _j(self, name):
         p = os.path.join(self.run, name)
         return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
 
     def _summary(self):
-        lat, imp, saf = self._j("latency_report.json"), self._j("impact_summary.json"), self._j("safety_audit.json")
         from collections import Counter
-        st = Counter(d["status"] for d in self.decisions)
-        goals = Counter((d.get("goal") or {}).get("id") for d in self.decisions if d["status"] == "PUBLISHED")
+        lat, imp, saf = self._j("latency_report.json"), self._j("impact_summary.json"), self._j("safety_audit.json")
         outs = Counter()
         p = os.path.join(self.run, "outcomes.jsonl")
         if os.path.exists(p):
             for l in open(p, encoding="utf-8"):
                 outs[json.loads(l)["outcome"]] += 1
-        return {"status": dict(st), "goals_published": {str(k): v for k, v in goals.items()}, "outcomes": dict(outs),
-                "viewers": len(self.index), "decisions": len(self.decisions), "latency": {k: lat.get(k) for k in ("live_visits", "published_decisions", "over_slo_60s", "over_5min_failures", "budgets", "circuit_breaker_trips")},
+        return {"status": dict(self._st), "goals_published": dict(self._goals), "outcomes": dict(outs),
+                "viewers": len(self.index), "decisions": len(self.rows), "latency": {k: lat.get(k) for k in ("live_visits", "published_decisions", "over_slo_60s", "over_5min_failures", "budgets", "circuit_breaker_trips")},
                 "impact": {"primary": imp.get("primary"), "stratified": imp.get("stratified"), "cace": imp.get("cace"), "by_goal": imp.get("by_goal"), "seeds": imp.get("seeds"),
                            "pilot": imp.get("pilot"), "naive": imp.get("naive")},
                 "safety": {k: saf.get(k) for k in ("actions_audited", "by_type", "violations", "clean")}}
 
     def list_decisions(self, q):
         status, arm, goal, text = q.get("status", [""])[0], q.get("arm", [""])[0], q.get("goal", [""])[0], q.get("q", [""])[0].lower()
-        off, lim = int(q.get("offset", ["0"])[0] or 0), min(100, int(q.get("limit", ["30"])[0] or 30))
-        rows = []
-        for d in self.decisions:
-            if status and d["status"] != status:
-                continue
-            if arm and d.get("arm") != arm:
-                continue
-            if goal and (d.get("goal") or {}).get("id") != goal:
-                continue
-            if text and text not in (d["viewer_id"] + " " + d["decision_id"] + " " + str(d.get("no_action_reason") or "")).lower():
-                continue
-            rows.append({"id": d["decision_id"], "viewer": d["viewer_id"], "arm": d.get("arm"), "status": d["status"], "action": d["action"],
-                         "goal": (d.get("goal") or {}).get("id"), "conf": d.get("confidence"), "lat": d.get("latency_s"),
-                         "at": d["trigger"]["deliver_at"], "reason": (d.get("no_action_reason") or "")[:140]})
+        try:
+            off, lim = max(0, int(q.get("offset", ["0"])[0] or 0)), max(1, min(100, int(q.get("limit", ["30"])[0] or 30)))
+        except ValueError:
+            off, lim = 0, 30
+        rows = [r for r in self.rows if (not status or r["status"] == status) and (not arm or r["arm"] == arm) and (not goal or r["goal"] == goal)
+                and (not text or text in (r["viewer"] + " " + r["id"] + " " + r["reason"]).lower())]
         return {"total": len(rows), "rows": rows[off: off + lim]}
 
     def viewer(self, vid):
@@ -132,7 +149,7 @@ class State:
         if not re.fullmatch(r"[A-Za-z0-9\-_]+", vid) or not os.path.exists(p):
             return None
         st = json.load(open(p, encoding="utf-8"))
-        st["decisions"] = [self.by_id[i] for i in self.by_viewer.get(vid, [])]
+        st["decisions"] = [self.decision(i) for i in self.by_viewer.get(vid, [])]
         return st
 
 
@@ -176,7 +193,7 @@ class H(BaseHTTPRequestHandler):
                 return self._send(200, STATE.list_decisions(q))
             m = re.fullmatch(r"/api/decision/([A-Za-z0-9\-]+)", path)
             if m:
-                d = STATE.by_id.get(m.group(1))
+                d = STATE.decision(m.group(1))
                 return self._send(200 if d else 404, d or {"error": "not found"})
             if path == "/api/viewers":
                 s = q.get("q", [""])[0].upper()
@@ -222,7 +239,7 @@ def serve(host: str = "0.0.0.0", port: int = None, run_dir: str = None):
     STATE = State(run_dir or find_run_dir())
     port = port or int(os.environ.get("PORT", "8000"))
     srv = ThreadingHTTPServer((host, port), H)
-    print("serving %d decisions / %d viewers from %s on http://%s:%d" % (len(STATE.decisions), len(STATE.index), STATE.run, host, port), flush=True)
+    print("serving %d decisions / %d viewers from %s on http://%s:%d" % (len(STATE.rows), len(STATE.index), STATE.run, host, port), flush=True)
     srv.serve_forever()
 
 

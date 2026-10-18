@@ -1,16 +1,19 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Agent Run Dashboard</title><style>
-:root{--bg:#f7f8fb;--card:#fff;--ink:#1b2333;--mute:#667085;--line:#e4e7ee;--a:#5b3df5;--b:#12a594;--c:#e5484d;--d:#f5a524}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1320;--card:#161d2e;--ink:#e8ecf5;--mute:#98a2b8;--line:#263049;--a:#8c7bff;--b:#3dd6c3;--c:#ff7a80;--d:#ffc457}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-main{max-width:1100px;margin:0 auto;padding:24px 16px 64px}h1{margin:0 0 4px;font-size:26px}h2{font-size:17px;margin:0 0 10px}
-.sub{color:var(--mute);margin-bottom:20px}.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:14px}.k{font-size:26px;font-weight:700}.l{color:var(--mute);font-size:13px}
-.bar{display:flex;align-items:center;gap:8px;margin:4px 0;font-size:13px}.bar i{display:block;height:14px;border-radius:4px;background:var(--a)}.bar span{min-width:190px;color:var(--mute)}
-table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:5px 8px;border-bottom:1px solid var(--line);text-align:left}svg{max-width:100%;height:auto}
-input,select{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit;max-width:100%}
-.pill{display:inline-block;padding:1px 8px;border-radius:99px;font-size:12px;border:1px solid var(--line)}.ok{color:var(--b)}.no{color:var(--c)}
-pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--bg);padding:10px;border-radius:8px;border:1px solid var(--line)}
+:root{--bg:#ffffff;--card:#ffffff;--ink:#1b1b1b;--mute:#555b66;--line:#d8dce3;--a:#143d6b;--b:#1b7f5c;--c:#b3261e;--d:#a8812c}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 "Times New Roman",Times,serif}
+main{width:100%;padding:24px clamp(16px,3vw,48px) 64px}h1{margin:0 0 4px;font-size:34px;color:#0b2a4a}h2{font-size:21px;margin:0 0 10px;color:#0b2a4a}
+.sub{color:var(--mute);margin-bottom:20px}.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px 20px;margin-bottom:18px;box-shadow:0 1px 3px rgba(11,42,74,.06);animation:up .6s both;transition:box-shadow .3s,transform .3s}
+.card:hover{box-shadow:0 8px 22px rgba(11,42,74,.1);transform:translateY(-2px)}.grid .card{border-top:4px solid #0b2a4a}
+.k{font-size:32px;font-weight:700;color:#0b2a4a}.l{color:var(--mute);font-size:14.5px}
+.bar{display:flex;align-items:center;gap:10px;margin:5px 0;font-size:15px}.bar i{display:block;height:15px;border-radius:3px;background:var(--a);animation:grow 1.1s both}.bar span{min-width:220px;color:var(--mute)}
+table{border-collapse:collapse;width:100%;font-size:14.5px}th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left}svg{max-width:100%;height:auto}
+input,select{background:#fff;color:var(--ink);border:1px solid #b9c0cb;border-radius:4px;padding:8px 10px;font:inherit;max-width:100%}
+.pill{display:inline-block;padding:1px 10px;border-radius:99px;font-size:13px;border:1px solid var(--line);background:#f5f7fa}.ok{color:var(--b)}.no{color:var(--c)}
+pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:#f5f7fa;padding:10px;border-radius:4px;border:1px solid var(--line)}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}@keyframes grow{from{width:0!important}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head><body><main>
 <h1>One User, One Agent: run dashboard</h1><div class="sub" id="sub"></div>
 <div class="grid" id="kpis"></div>
