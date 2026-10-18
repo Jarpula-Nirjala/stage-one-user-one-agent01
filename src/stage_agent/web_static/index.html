@@ -96,6 +96,32 @@ header .pad>*{position:relative;z-index:2}header .lead{max-width:760px}
 @keyframes spin{to{transform:rotate(360deg)}}@keyframes shim{to{background-position:-200% 0}}@keyframes rowin{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
 @media(max-width:700px){.bar span{width:130px}.two{grid-template-columns:1fr}th,td{padding:6px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+.fc{width:100%;overflow-x:auto}.fc svg{width:100%;min-width:760px;height:auto;display:block}
+.fc text{font-family:"Times New Roman",Times,serif}
+.nd{cursor:pointer}.nd .bx{transition:filter .25s,stroke-width .25s,transform .25s;transform-box:fill-box;transform-origin:center}
+.nd:hover .bx{filter:drop-shadow(0 5px 8px rgba(11,42,74,.28));transform:translateY(-2px)}
+.nd.on .bx{stroke-width:4;filter:drop-shadow(0 0 10px rgba(168,129,44,.85))}
+.nd .t1{font-weight:700;font-size:15.5px}.nd .t2{font-size:12.6px;fill:#4a5262}
+.k-in .bx{fill:#eef3fa;stroke:#143d6b;stroke-width:2}.k-h .bx{fill:#0b2a4a;stroke:#0b2a4a;stroke-width:2}.k-h .t1{fill:#fff}.k-h .t2{fill:#cfdcec}
+.k-g .bx{fill:#fffaf0;stroke:#a8812c;stroke-width:2.5}.k-s .bx{fill:#fdf0ef;stroke:#b3261e;stroke-width:2}.k-s .t1{fill:#8a1c15}
+.k-c .bx{fill:#fff;stroke:#143d6b;stroke-width:2.5}.k-d .bx{fill:#fff;stroke:#7a8599;stroke-width:2;stroke-dasharray:6 4}
+.k-v .bx{fill:#eaf6f1;stroke:#1b7f5c;stroke-width:3}.k-m .bx{fill:#f3effd;stroke:#5b3df5;stroke-width:2.5}
+.ed{fill:none;stroke:#7a8599;stroke-width:2.2}.ed.fl{stroke:#143d6b;stroke-dasharray:7 7;animation:dash 1.1s linear infinite}.ed.red{stroke:#b3261e}.ed.dsh{stroke-dasharray:4 5;animation:none}
+.lb{font-size:12px;fill:#6a7385;font-style:italic}
+.dtl{margin-top:14px;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:6px;padding:14px 20px;background:#fffdf8;min-height:128px;animation:fade .4s both}
+.dtl h3{margin:0 0 4px}.dtl .f{font-size:14px;color:var(--mute);margin-top:6px}.dtl ul{margin:6px 0 0 18px;padding:0}
+.ctl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 12px}.ctl .mute{font-size:15px}
+.lg{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 10px;font-size:13.5px;color:var(--mute)}.lg i{display:inline-block;width:14px;height:14px;border-radius:3px;margin-right:6px;vertical-align:-2px;border:2px solid}
+.lad{display:grid;gap:10px;margin-top:6px}.lad .st{position:relative;border-radius:6px;padding:11px 16px 11px 58px;color:#102033;opacity:0;transform:translateX(-24px);transition:opacity .6s,transform .6s}
+.lad.in .st{opacity:1;transform:none}.lad .st b{display:block}.lad .st span{font-size:15px}.lad .st em{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;background:#fff;display:grid;place-items:center;font-style:normal;font-weight:700;color:#0b2a4a;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.tz{display:grid;gap:12px;grid-template-columns:1fr 34px 1fr 34px 1fr 34px 1fr;align-items:stretch}.tz .z{border:1px solid var(--line);border-radius:6px;padding:12px 14px;background:#fff}
+.tz .z h4{margin:0 0 6px;font-size:16px;color:var(--navy)}.tz .z.u{border-top:4px solid #b3261e;background:#fdf6f5}.tz .z.g{border-top:4px solid #a8812c;background:#fffaf0}.tz .z.t{border-top:4px solid #1b7f5c;background:#f3faf7}.tz .z.o{border-top:4px solid #143d6b;background:#f3f7fc}
+.tz .z li{font-size:14.5px;margin:3px 0}.tz .z ul{margin:0;padding-left:18px}.tz .ar{display:grid;place-items:center;color:var(--gold);font-size:26px;animation:nudge 1.6s ease-in-out infinite}
+.mf{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;justify-content:center}.mf .m{flex:1 1 170px;max-width:240px;border:1px solid var(--line);border-top:4px solid #5b3df5;border-radius:6px;padding:10px 12px;background:#faf8ff;position:relative;transition:transform .3s,box-shadow .3s}
+.mf .m:hover{transform:translateY(-4px);box-shadow:0 10px 22px rgba(91,61,245,.15)}.mf .m b{display:block;color:var(--navy)}.mf .m span{font-size:14.5px;color:#444}.mf .a{align-self:center;color:var(--gold);font-size:24px;animation:nudge 1.6s ease-in-out infinite}
+details.full{margin-top:16px}details.full summary{cursor:pointer;font-weight:700;color:var(--navy);padding:10px 0;font-size:18px}
+@keyframes dash{to{stroke-dashoffset:-28}}@keyframes nudge{50%{transform:translateX(5px)}}
+@media(max-width:900px){.tz{grid-template-columns:1fr}.tz .ar{transform:rotate(90deg);height:24px}}
 </style></head><body>
 <div class="topbar"><div class="pad"><span>Applied AI Engineering &middot; Research Prototype &middot; Decide &middot; Act &middot; Verify &middot; Measure</span>
 <span class="dev"><small>Developed by:</small> <b>Jarpula Nirjala</b></span></div></div>
@@ -136,7 +162,34 @@ header .pad>*{position:relative;z-index:2}header .lead{max-width:760px}
 <section id="dashboard"><iframe id="dframe" title="dashboard" loading="lazy"></iframe></section>
 <section id="impactp"><div class="banner b-impact"><div><h2>Impact report</h2><span>Agent versus randomized holdout, honestly measured</span></div></div><div class="card doc" id="impactdoc"><div class="skel"></div><div class="skel"></div></div></section>
 <section id="finalp"><div class="banner b-final"><div><h2>Final report</h2><span>What happened, and every data issue we handled</span></div></div><div class="card doc" id="finaldoc"><div class="skel"></div><div class="skel"></div></div></section>
-<section id="arch"><div class="banner b-arch"><div><h2>Architecture</h2><span>Ownership, planning, memory, verification, latency, recovery</span></div></div><div class="card doc" id="archdoc"><div class="skel"></div><div class="skel"></div></div></section>
+<section id="arch"><div class="banner b-arch"><div><h2>Architecture</h2><span>Click any box to see what it does, which rules it enforces and where the code lives</span></div></div>
+<div class="card"><p class="sec">The whole loop</p><h2>From a trigger to a judged outcome</h2>
+<div class="ctl"><button class="b" id="fcplay">&#9654; Walk through the pipeline</button><button class="b" id="fcstop" style="background:#fff;color:var(--navy);border:1px solid var(--navy)">Stop</button><span class="mute">or click any box</span></div>
+<div class="lg"><span><i style="background:#eef3fa;border-color:#143d6b"></i>input</span><span><i style="background:#fffaf0;border-color:#a8812c"></i>gate (decision)</span><span><i style="background:#fdf0ef;border-color:#b3261e"></i>recorded stop</span><span><i style="background:#fff;border-color:#143d6b"></i>processing</span><span><i style="background:#eaf6f1;border-color:#1b7f5c"></i>independent verifier</span><span><i style="background:#f3effd;border-color:#5b3df5"></i>measurement</span></div>
+<div class="fc"><svg id="fcsvg" viewBox="0 0 1200 800" role="img" aria-label="Decision pipeline flowchart"><defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#143d6b"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b3261e"/></marker></defs></svg></div>
+<div class="dtl" id="fcdtl"><h3>Select a step</h3><span class="mute">Each box is a real component of the system. Dashed arrows show data moving; gold boxes are the checks that can stop a decision before any model or content work happens.</span></div></div>
+
+<div class="two"><div class="card"><p class="sec">When things fail</p><h2>The degradation ladder</h2><div class="lad" id="lad">
+<div class="st" style="background:#e3f4ec;margin-right:0"><em>1</em><b>Everything healthy</b><span>Facts + model second opinion + personalised page + proportionate message</span></div>
+<div class="st" style="background:#eaf4df;margin-right:4%"><em>2</em><b>Model slow, down or garbled</b><span>Safe parse, one retry for bad JSON, circuit breaker; rules choose the goal, same page</span></div>
+<div class="st" style="background:#f6f2d6;margin-right:8%"><em>3</em><b>Queue wait above 8 s</b><span>Optional model call skipped; decision still personalised</span></div>
+<div class="st" style="background:#fbebcd;margin-right:12%"><em>4</em><b>Data store slow or down</b><span>Read capped at 1.5 s; day-old snapshot; minimal page; no goal committed; no message</span></div>
+<div class="st" style="background:#fbdcc4;margin-right:16%"><em>5</em><b>Queue wait above 25 s</b><span>Only the minimal safe in-dialect page</span></div>
+<div class="st" style="background:#f8cfc8;margin-right:20%"><em>6</em><b>Verifier rejects the plan</b><span>Repair once with a minimal page; drop a failing message; keep what passes</span></div>
+<div class="st" style="background:#f3bdb8;margin-right:24%"><em>7</em><b>Nothing safe or on time</b><span>No action, recorded with its reason. A late or wrong action is never published</span></div></div></div>
+
+<div class="card"><p class="sec">Proof</p><h2>How impact is measured</h2>
+<div class="mf"><div class="m"><b>1. Randomized arms</b><span>Every viewer is agent or holdout, at random</span></div><div class="a">&#10140;</div>
+<div class="m"><b>2. Same goal both arms</b><span>Reference goal from pre-treatment facts; holdout gets a computation-only counterfactual</span></div><div class="a">&#10140;</div>
+<div class="m"><b>3. Act, or do nothing</b><span>Agent arm: page / message. Holdout: zero actions, zero model calls</span></div><div class="a">&#10140;</div>
+<div class="m"><b>4. Simulate 14 days</b><span>Outcome events for everyone, any seed</span></div><div class="a">&#10140;</div>
+<div class="m"><b>5. Judge attributably</b><span>Only events whose true time is inside the goal window</span></div><div class="a">&#10140;</div>
+<div class="m"><b>6. Intention-to-treat</b><span>Agent minus holdout with a confidence interval; served-vs-rest shown only as the biased contrast</span></div></div></div></div><div class="card"><p class="sec">Who is trusted</p><h2>Trust boundaries</h2>
+<div class="tz"><div class="z u"><h4>Untrusted input</h4><ul><li>catalogue descriptions</li><li>search queries, deeplinks</li><li>model output</li><li>phone clocks</li><li>profile snapshot (a day old)</li></ul></div><div class="ar">&#10140;</div>
+<div class="z g"><h4>Gatekeepers</h4><ul><li>scanner, then description discarded</li><li>one strict deeplink pattern</li><li>JSON schema + claim check</li><li>sent&minus;occurred, received_at</li><li>freshness and precedence rules</li></ul></div><div class="ar">&#10140;</div>
+<div class="z t"><h4>Trusted core</h4><ul><li>rule engine</li><li>independent verifier</li><li>consent / cap ledgers</li><li>arms table (holdout)</li></ul></div><div class="ar">&#10140;</div>
+<div class="z o"><h4>Effects</h4><ul><li>actions.jsonl</li><li>viewer state + journal</li><li>outcomes, learnings</li><li>reports</li></ul></div></div>
+<p class="mute" style="margin:12px 0 0">Text from the data is content, never instruction. A model answer is a claim: it is accepted only if the rule engine independently finds the goal eligible and its evidence resolves. The reason text it writes is ignored.</p></div><details class="full"><summary>Read the full architecture note</summary><div class="card doc" id="archdoc"><div class="skel"></div><div class="skel"></div></div></details></section>
 <section id="limits"><div class="banner b-limits"><div><h2>Known limitations</h2><span>What was left incomplete on purpose, and why</span></div></div><div class="fl" id="fl"></div><div class="tl" id="tl"><div class="prog" id="prog"></div></div></section>
 </main>
 <footer><div class="pad">One User, One Agent &middot; Lifecycle agent research prototype &middot; Synthetic data only &middot; Built with the Python standard library &middot; Photographs: Unsplash.</div></footer>
@@ -213,4 +266,102 @@ let off=0;async function load(){const q=new URLSearchParams({status:$("#fs").val
  document.querySelectorAll("#dbody tr").forEach(e=>e.onclick=async()=>{const d=await J("/api/decision/"+e.dataset.id);$("#dout").innerHTML=`<div class="card rv"><h3>${d.decision_id}</h3><pre>${esc(JSON.stringify(d,null,1))}</pre></div>`;reveal();$("#dout").scrollIntoView({behavior:"smooth"})})}
 $("#fgo").onclick=()=>{off=0;load()};$("#next").onclick=()=>{off+=30;load()};$("#prev").onclick=()=>{off=Math.max(0,off-30);load()};load();
 const hh=location.hash.slice(1);if(hh&&tabs[hh]){document.querySelector(`nav button[data-t=${hh}]`).click()}
+// ---------------- architecture flowchart (generated SVG, no libraries)
+const NS="http://www.w3.org/2000/svg";
+const FN=[
+ {id:"i1",k:"in",x:40,y:20,w:250,h:66,t:"Trigger",s:["app_open or login_success","delivered at deliver_at"]},
+ {id:"i2",k:"in",x:330,y:20,w:250,h:66,t:"Live events",s:["purchase, play, opt-out,","signup (arrive during the day)"]},
+ {id:"i3",k:"in",x:620,y:20,w:250,h:66,t:"Control events",s:["title withdrawn, rule corrected,","model / store outage"]},
+ {id:"i4",k:"in",x:910,y:20,w:250,h:66,t:"Send-time timers",s:["scheduled push / WhatsApp","re-checked when they fire"]},
+ {id:"h",k:"h",x:40,y:118,w:1120,h:58,t:"Replay harness",s:["time-ordered merge  |  worker pool with per-viewer serialisation  |  queue wait  |  load shedding: skip model, then minimal page, then drop"]},
+ {id:"g1",k:"g",x:40,y:222,w:250,h:74,t:"Duplicate event_id?",s:["idempotency key = trigger id"]},
+ {id:"g2",k:"g",x:330,y:222,w:250,h:74,t:"Buffered, stale open?",s:["age = sent - occurred > 10 min"]},
+ {id:"g3",k:"g",x:620,y:222,w:250,h:74,t:"Holdout arm?",s:["zero actions of any kind"]},
+ {id:"g4",k:"g",x:910,y:222,w:250,h:74,t:"Session already served?",s:["one decision per visit"]},
+ {id:"s1",k:"s",x:40,y:330,w:250,h:50,t:"Replay the first decision",s:["no second action"]},
+ {id:"s2",k:"s",x:330,y:330,w:250,h:50,t:"State update only",s:["not a live session"]},
+ {id:"s3",k:"s",x:620,y:330,w:250,h:50,t:"Counterfactual goal only",s:["no model call, no action"]},
+ {id:"s4",k:"s",x:910,y:330,w:250,h:50,t:"NO_ACTION + reason",s:["recorded in decisions.jsonl"]},
+ {id:"c1",k:"c",x:40,y:440,w:250,h:70,t:"Fact resolver",s:["source, time, freshness per fact","precedence, conflicts kept visible"]},
+ {id:"c2",k:"c",x:330,y:440,w:250,h:70,t:"Goal planner",s:["eligibility from evidence","one measurable goal, or abstain"]},
+ {id:"c3",k:"c",x:620,y:440,w:250,h:70,t:"Model advisor",s:["a second opinion, never evidence","claim checked by the rule engine"]},
+ {id:"c4",k:"c",x:910,y:440,w:250,h:70,t:"Intervention planner",s:["home page, ONE message, or nothing","timing inside allowed hours"]},
+ {id:"d1",k:"d",x:40,y:546,w:250,h:44,t:"Data store (guarded)",s:["timeout 1.5 s, snapshot fallback"]},
+ {id:"d2",k:"d",x:620,y:546,w:250,h:44,t:"Gateway",s:["breaker, retry, safe JSON parse"]},
+ {id:"v",k:"v",x:40,y:650,w:208,h:76,t:"Independent verifier",s:["eligibility, dialect, availability,","consent, hours, cap, copy, holdout"]},
+ {id:"p",k:"c",x:268,y:650,w:208,h:76,t:"Publish",s:["actions.jsonl with","published_at = deliver + latency"]},
+ {id:"dg",k:"v",x:496,y:650,w:208,h:76,t:"Dispatch gate",s:["re-verifies at send time:","opt-out, withdrawal, goal closed"]},
+ {id:"j",k:"m",x:724,y:650,w:208,h:76,t:"Outcome judge",s:["succeeded / failed / inconclusive","attributable events only"]},
+ {id:"m",k:"m",x:952,y:650,w:208,h:76,t:"Impact analysis",s:["agent vs holdout (ITT)","confidence interval, pilot recheck"]},
+ {id:"rj",k:"s",x:40,y:748,w:208,h:44,t:"Reject: repair or drop",s:["page repaired, message dropped"]},
+ {id:"ln",k:"d",x:724,y:748,w:208,h:44,t:"Learnings written back",s:["viewer state + cross-viewer priors"]}
+];
+const FD={
+ i1:{t:"Trigger",d:"The event that wakes the viewer's agent: an app_open or a login. Timestamps from the phone can be wrong, so ordering uses the server's received_at, and the event's age is sent_at minus occurred_at.",r:["2,769 triggers in the replay day","90 were duplicate deliveries","432 were older than 10 minutes"],f:"loader.py, harness.py"},
+ i2:{t:"Live events",d:"Purchases, plays, opt-outs and sign-ups that arrive while the replay runs. Each is applied only to its own viewer, in delivery order, so a decision can never see the future.",r:["a purchase after a decision closes the goal, cancels pending messages and re-plans","an opt-out cancels that channel's pending message"],f:"agent.py (on_live_event)"},
+ i3:{t:"Control events",d:"Operational changes: a title withdrawn, a goal's success rule corrected, the model provider or the data store going down or slow. Each is applied at its own timestamp and only to what it affects.",r:["withdrawal: live pages rebuilt without the title, pending messages cancelled","rule correction: only open goals of that kind are revised"],f:"agent.py (on_control), resilience.py"},
+ i4:{t:"Send-time timers",d:"A scheduled push or WhatsApp is not final when it is planned. When its send time arrives the dispatch gate checks everything again.",r:["quiet hours 22:00-08:00 IST","at most one push or WhatsApp per IST day"],f:"harness.py, agent.py (dispatch)"},
+ h:{t:"Replay harness",d:"Feeds triggers, live events, control events and timers to the runtime in time order. It simulates a worker pool: when the queue grows, optional work is shed so decisions still publish within 60 seconds.",r:["wait above 8 s: skip the model","above 25 s: minimal safe page only","above 30 s: drop and record (never publish late)","stale flushes never occupy a worker"],f:"harness.py"},
+ g1:{t:"Duplicate event_id?",d:"The trigger's event_id is the idempotency key. A second delivery returns the first decision and creates no second action.",r:["tested: duplicate trigger yields one action"],f:"agent.py (on_trigger)"},
+ g2:{t:"Buffered, stale open?",d:"A phone can buffer an app_open offline and flush it days later. That is not a live visit. Age uses the phone-internal difference sent_at minus occurred_at, which cancels a wrong clock, so a skewed-but-live open is not discarded by mistake.",r:["stale if older than 600 s","61 live triggers had wrong clocks and were correctly kept"],f:"loader.py, agent.py"},
+ g3:{t:"Holdout arm?",d:"Holdout viewers receive nothing: no page, no message, no model call. Only a computation-only counterfactual goal is stored so the arms can be compared on the same goal.",r:["verified by the simulator report and an independent audit: 0 holdout actions"],f:"agent.py, verifier.py"},
+ g4:{t:"Session already served?",d:"Several triggers can belong to one visit (login then open). One decision per session avoids churn; a live page that is still valid for the same goal and dialect is not rebuilt.",r:["page TTL 120 minutes"],f:"agent.py"},
+ s1:{t:"Replay the first decision",d:"The original decision is returned with status DUPLICATE_SUPPRESSED. No second action is created.",r:[],f:"agent.py"},
+ s2:{t:"State update only",d:"The buffered open still teaches the agent something (the viewer was active then), so it is recorded in the viewer's journal, but it never produces a page or a message.",r:["recorded as NO_ACTION_STALE"],f:"agent.py"},
+ s3:{t:"Counterfactual goal only",d:"For holdout viewers the same rule engine picks the goal they would have had, with no model call and no action. This is what makes goal-level impact comparison fair.",r:["a test swaps all arms and checks the goal is unchanged"],f:"agent.py, tests"},
+ s4:{t:"NO_ACTION + reason",d:"Doing nothing is a real decision with a recorded reason, for example: session already served, live page still valid, dialect unresolvable, overload.",r:["every no-action reason is in no_action.jsonl"],f:"harness.py"},
+ c1:{t:"Fact resolver",d:"Builds what is known about the viewer, every fact with source, time and freshness, and applies a precedence rule per fact. Conflicts are never silently dropped.",r:["dialect: app setting on the trigger wins; profile and campaign link are listed as conflicts","subscription: newer events beat the snapshot; a profile 'never' contradicted by a purchase loses","consent: profile AND no opt-out event; no profile row means no consent","two profile rows that disagree and cannot be arbitrated block status-based goals"],f:"facts.py"},
+ c2:{t:"Goal planner",d:"Evaluates every goal from evidence, rejects the ones that are ineligible with a reason, and picks one by a lifecycle priority ladder. Goals without a measurable success event are never chosen.",r:["G10 (no success event) and G11 (tv_app_open never occurs) excluded","interpretations of unclear rules are written into each decision's assumptions","rule versions: a corrected rule revises only the open goals it affects"],f:"goals.py"},
+ c3:{t:"Model advisor",d:"Asks a model for its view of the viewer's goal. The answer is a claim: it is accepted only if the rule engine independently found the goal eligible and the evidence resolves. A confident claim with no supporting event is rejected.",r:["max 8 model calls per decision (configurable)","timeout 2.5 s, one retry for malformed JSON, circuit breaker after 3 failures","mock model by default: no API key needed"],f:"model.py"},
+ c4:{t:"Intervention planner",d:"Builds a personalised home page (hero, up to 6 rows, 3-10 titles per row, one title per content slug, in the page dialect and available now) and decides whether a message is warranted at all.",r:["a message only if the goal needs reach outside the app, the dialect is confirmed, and the 7-day budget allows","WhatsApp only with approved templates; push copy under 40 / 120 characters","sent at the viewer's habitual hour, never in quiet hours"],f:"intervention.py"},
+ d1:{t:"Data store (guarded)",d:"Reads are capped at 1.5 s. If the store is slow or down, the agent falls back to the day-old warehouse snapshot plus what the trigger itself carries, publishes a minimal page and commits no goal.",r:["max 20 tool calls per decision; verification calls are reserved"],f:"resilience.py"},
+ d2:{t:"Model gateway",d:"Budget, circuit breaker, timeout accounting, safe JSON parsing and schema validation sit between the agent and any model, so a stalled or garbled provider costs milliseconds, not the latency budget.",r:["a 45 s provider stall costs 2.5 s"],f:"model.py"},
+ v:{t:"Independent verifier",d:"A separate module with its own code paths. It receives the raw ground truth (catalogue, arms, consent ledger, message ledger, policy) and never the planner's own flags. It can reject any action.",r:["holdout, dialect, availability, page structure, consent, quiet hours, frequency cap, template approval, copy rules, honest prices, deeplink format, injected-text quarantine","a second auditor re-checks the final actions file against the raw pack"],f:"verifier.py, audit.py"},
+ p:{t:"Publish",d:"Actions are written in the simulator's input format. published_at is deliver_at plus queue wait plus the measured decision time, and the decision records its own latency, model calls, tool calls and fallbacks.",r:["p95 about 0.35 s, no decision over 60 s"],f:"agent.py, harness.py"},
+ dg:{t:"Dispatch gate",d:"When a scheduled message's send time arrives it is verified again with what is now known. If the viewer opted out, the title was withdrawn, or the goal already succeeded, the message is cancelled instead of sent.",r:[],f:"agent.py (dispatch)"},
+ j:{t:"Outcome judge",d:"Closes the loop. Each goal is judged succeeded, failed or inconclusive using only events whose estimated true time falls inside the goal window. Late arrivals that happened before the goal started are surfaced but never counted.",r:["lessons are written into each viewer's state"],f:"judge.py"},
+ m:{t:"Impact analysis",d:"Agent arm versus randomized holdout using intention-to-treat on the same reference goal, with confidence intervals, a served-viewer estimate, a balance check and several simulator seeds. The pilot report's served-versus-rest headline is recomputed and explained.",r:["pilot: +22.4 pp claimed, about -1 pp on randomized arms"],f:"impact.py"},
+ rj:{t:"Reject: repair or drop",d:"If a plan fails verification the system degrades: it repairs the page once with a minimal version, drops a failing message and keeps what passes. Nothing unverified is ever published.",r:[],f:"agent.py"},
+ ln:{t:"Learnings written back",d:"Per-viewer lessons (for example 'push token invalid, prefer WhatsApp') and cross-viewer baseline rates from the holdout arm are saved and can seed the next run.",r:[],f:"judge.py"}
+};
+const FE=[ // [from,to,mode,cls,label]
+ ["i1","h","v","fl"],["i2","h","v","fl"],["i3","h","v","fl"],["i4","h","v","fl"],
+ ["h","g1","v","fl"],["h","g2","v","fl"],["h","g3","v","fl"],["h","g4","v","fl"],
+ ["g1","g2","h","fl","no"],["g2","g3","h","fl","no"],["g3","g4","h","fl","no"],
+ ["g1","s1","v","red","yes"],["g2","s2","v","red","yes"],["g3","s3","v","red","yes"],["g4","s4","v","red","yes"],
+ ["c1","c2","h","fl"],["c2","c3","h","fl"],["c3","c4","h","fl"],
+ ["c1","d1","v","dsh"],["c3","d2","v","dsh"],
+ ["v","p","h","fl","pass"],["p","dg","h","fl"],["dg","j","h","fl"],["j","m","h","fl"],
+ ["v","rj","v","red","fail"],["j","ln","v","dsh"]
+];
+(function(){
+ const svg=document.getElementById("fcsvg");if(!svg)return;const byId={};FN.forEach(n=>byId[n.id]=n);
+ const el=(n,a,p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e};
+ const eg=el("g",{});
+ const cx=n=>n.x+n.w/2,by=n=>n.y+n.h;
+ function edge(a,b,mode,cls,lab){a=byId[a];b=byId[b];let d,lx,ly;
+  if(mode=="v"){d="M"+cx(a)+","+by(a)+" V"+b.y;lx=cx(a)+8;ly=(by(a)+b.y)/2+4}
+  else{d="M"+(a.x+a.w)+","+(a.y+a.h/2)+" H"+b.x;lx=(a.x+a.w+b.x)/2;ly=a.y+a.h/2-6}
+  const p=el("path",{d:d,class:"ed "+(cls||""),"marker-end":cls=="red"?"url(#ar)":"url(#ah)"},eg);
+  if(lab){const t=el("text",{x:lx,y:ly,class:"lb","text-anchor":mode=="h"?"middle":"start"},eg);t.textContent=lab}}
+ FE.forEach(e=>edge(e[0],e[1],e[2],e[3],e[4]));
+ // elbow routes
+ const route=(d,cls,lab,lx,ly)=>{el("path",{d:d,class:"ed "+cls,"marker-end":"url(#ah)"},eg);if(lab){const t=el("text",{x:lx,y:ly,class:"lb"},eg);t.textContent=lab}};
+ route("M1160,259 H1188 V404 H165 V440","fl","all gates passed",1000,398);
+ route("M1035,510 V606 H144 V650","fl","personalised plan",330,598);
+ FN.forEach(n=>{const g=el("g",{class:"nd k-"+n.k,"data-id":n.id,tabindex:0,role:"button","aria-label":n.t});
+  if(n.k=="g"){const q=18;el("polygon",{class:"bx",points:[n.x+q,n.y,n.x+n.w-q,n.y,n.x+n.w,n.y+n.h/2,n.x+n.w-q,n.y+n.h,n.x+q,n.y+n.h,n.x,n.y+n.h/2].join(" ")},g)}
+  else el("rect",{class:"bx",x:n.x,y:n.y,width:n.w,height:n.h,rx:8},g);
+  const t=el("text",{x:n.x+n.w/2,y:n.y+(n.s.length>1?22:n.h>50?n.h/2-4:20),"text-anchor":"middle",class:"t1"},g);t.textContent=n.t;
+  n.s.forEach((s,i)=>{const u=el("text",{x:n.x+n.w/2,y:n.y+(n.s.length>1?40:n.h>50?n.h/2+14:36)+i*16,"text-anchor":"middle",class:"t2"},g);u.textContent=s});
+  g.onclick=()=>pick(n.id);g.onkeydown=e=>{if(e.key=="Enter"||e.key==" "){e.preventDefault();pick(n.id)}}});
+ function pick(id){document.querySelectorAll(".nd").forEach(x=>x.classList.toggle("on",x.dataset.id==id));const d=FD[id];if(!d)return;
+  document.getElementById("fcdtl").innerHTML="<h3>"+esc(d.t)+"</h3><div>"+esc(d.d)+"</div>"+(d.r.length?"<ul>"+d.r.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>":"")+'<div class="f">Code: '+esc(d.f)+"</div>"}
+ const order=["i1","i2","i3","i4","h","g1","g2","g3","g4","s4","c1","d1","c2","c3","d2","c4","v","rj","p","dg","j","ln","m"];let timer=null,idx=0;
+ const stop=()=>{clearInterval(timer);timer=null};
+ document.getElementById("fcplay").onclick=()=>{stop();idx=0;pick(order[0]);timer=setInterval(()=>{idx++;if(idx>=order.length){stop();return}pick(order[idx]);const n=document.querySelector('.nd[data-id="'+order[idx]+'"]');if(n){const r=n.getBoundingClientRect();if(r.top<80||r.bottom>innerHeight-40)n.scrollIntoView({block:"center",behavior:"smooth"})}},2600)};
+ document.getElementById("fcstop").onclick=stop;
+ // staircase animation when visible
+ const lad=document.getElementById("lad");if(lad){const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){lad.classList.add("in");lad.querySelectorAll(".st").forEach((s,i)=>s.style.transitionDelay=(i*140)+"ms");o.disconnect()}}),{threshold:.2});o.observe(lad)}
+})();
 </script></body></html>
