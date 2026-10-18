@@ -167,6 +167,17 @@ body.compact header .heroimg{opacity:0;animation:none}
 body.compact .banner{height:130px;margin-bottom:18px}body.compact .banner h2{font-size:clamp(22px,2.4vw,30px)}
 body.compact main{padding-top:14px}
 @media(prefers-reduced-motion:reduce){.hx,header h1,header .pad{transition:none}}
+
+.car .step,.car .step.c,.car .step.l,.car .step.r{pointer-events:none!important;cursor:default!important}
+.car{height:clamp(500px,34vw,560px)}.car .step{top:14px}
+.carwrap{margin-bottom:22px;padding:4px 0 2px}.cprog{margin:8px auto 4px}
+.band{min-height:230px;margin-bottom:22px}.band div{padding:28px clamp(16px,4vw,72px)}
+main{padding-top:20px;padding-bottom:48px}section>.sec{margin-top:4px}
+.card{margin-bottom:18px}.grid{margin-bottom:18px;gap:16px}.two{gap:18px;margin-bottom:0}
+.banner{margin-bottom:20px}h2{margin-bottom:10px}
+@media(max-width:900px){.car{height:540px}}
+.car{height:clamp(480px,29vw,520px)}
+#kpis{grid-template-columns:repeat(4,1fr)}@media(max-width:1000px){#kpis{grid-template-columns:repeat(2,1fr)}}
 </style></head><body>
 <div class="topbar"><div class="pad"><span>Applied AI Engineering &middot; Research Prototype &middot; Decide &middot; Act &middot; Verify &middot; Measure</span>
 <span class="dev"><small>Developed by:</small> <b>Jarpula Nirjala</b></span></div></div>
@@ -187,7 +198,7 @@ body.compact main{padding-top:14px}
 <div class="step rv"><div class="ph"><img loading="lazy" alt="Circuit board close-up" src="/static/img/circuit.jpg"><span class="no">04</span></div><div class="tx"><h3>Verify independently</h3><p>A separate verifier checks eligibility, dialect, availability, consent, quiet hours, frequency, copy and holdout, and can reject any action.</p></div></div>
 <div class="step rv"><div class="ph"><img loading="lazy" alt="Server racks" src="/static/img/servers.jpg"><span class="no">05</span></div><div class="tx"><h3>Degrade safely</h3><p>When the model or the data store fails, a circuit breaker and cached facts keep decisions fast and safe. A smaller action beats a late or wrong one.</p></div></div>
 <div class="step rv"><div class="ph"><img loading="lazy" alt="Results dashboard" src="/static/img/dashboard.jpg"><span class="no">06</span></div><div class="tx"><h3>Prove the impact</h3><p>Intention-to-treat on randomized arms with confidence intervals. The biased served-versus-rest comparison is shown only for contrast.</p></div></div>
-</div><div class="cctl"><button id="cprev" aria-label="Previous">&#10094;</button><div class="dots" id="cdots"></div><button id="cnext" aria-label="Next">&#10095;</button></div><div class="cprog"><i id="cbar"></i></div></div>
+</div><div class="cprog"><i id="cbar"></i></div></div>
 <p class="sec">Results of the replay</p><div class="grid" id="kpis"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
 <div class="two"><div class="card rv"><p class="sec">Behaviour</p><h2>What the agent did with each trigger</h2><div id="mix"></div></div>
 <div class="card rv"><p class="sec">Measurement</p><h2>Impact: agent versus randomized holdout</h2><div id="impact"></div><div id="pilot"></div></div></div>
@@ -410,19 +421,10 @@ const FE=[ // [from,to,mode,cls,label]
  const lad=document.getElementById("lad");if(lad){const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){lad.classList.add("in");lad.querySelectorAll(".st").forEach((s,i)=>s.style.transitionDelay=(i*140)+"ms");o.disconnect()}}),{threshold:.2});o.observe(lad)}
 })();
 
-// ---------------- coverflow carousel for the six steps
-(function(){const car=document.getElementById("car");if(!car)return;const cards=[...car.querySelectorAll(".step")],n=cards.length;let cur=0,timer=null,t0=0;const MS=5200;
- const dots=document.getElementById("cdots"),bar=document.getElementById("cbar");
- cards.forEach((c,i)=>{c.classList.remove("rv","in");const d=document.createElement("i");d.onclick=()=>go(i,true);dots.appendChild(d);c.onclick=()=>{if(c.classList.contains("l")||c.classList.contains("r"))go(i,true)}});
- function paint(){cards.forEach((c,i)=>{let d=((i-cur)%n+n)%n;c.classList.remove("c","l","r");if(d===0)c.classList.add("c");else if(d===1)c.classList.add("r");else if(d===n-1)c.classList.add("l")});
-  [...dots.children].forEach((e,i)=>e.classList.toggle("on",i===cur))}
- function go(i,user){cur=((i%n)+n)%n;paint();restart()}
- function restart(){clearInterval(timer);t0=performance.now();bar.style.transition="none";bar.style.width="0";void bar.offsetWidth;
-  if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;bar.style.transition="width "+MS+"ms linear";bar.style.width="100%";
-  timer=setInterval(()=>{cur=(cur+1)%n;paint();bar.style.transition="none";bar.style.width="0";void bar.offsetWidth;bar.style.transition="width "+MS+"ms linear";bar.style.width="100%"},MS)}
- document.getElementById("cprev").onclick=()=>go(cur-1,true);document.getElementById("cnext").onclick=()=>go(cur+1,true);
- const wrap=car.parentElement;wrap.onmouseenter=()=>{clearInterval(timer);bar.style.transition="none"};wrap.onmouseleave=()=>restart();
- let sx=null;car.addEventListener("touchstart",e=>sx=e.touches[0].clientX,{passive:true});car.addEventListener("touchend",e=>{if(sx==null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(cur+(dx<0?1:-1),true);sx=null});
- document.addEventListener("visibilitychange",()=>{if(document.hidden)clearInterval(timer);else restart()});
- paint();restart();})();
+// ---------------- coverflow carousel for the six steps: fully automatic, 3 seconds per slide
+(function(){const car=document.getElementById("car");if(!car)return;const cards=[...car.querySelectorAll(".step")],n=cards.length,MS=3000;let cur=0;const bar=document.getElementById("cbar");
+ cards.forEach(c=>c.classList.remove("rv","in"));
+ function paint(){cards.forEach((c,i)=>{const d=((i-cur)%n+n)%n;c.classList.remove("c","l","r");if(d===0)c.classList.add("c");else if(d===1)c.classList.add("r");else if(d===n-1)c.classList.add("l")})}
+ function tick(){bar.style.transition="none";bar.style.width="0";void bar.offsetWidth;bar.style.transition="width "+MS+"ms linear";bar.style.width="100%"}
+ paint();tick();setInterval(()=>{if(document.hidden)return;cur=(cur+1)%n;paint();tick()},MS);})();
 </script></body></html>
