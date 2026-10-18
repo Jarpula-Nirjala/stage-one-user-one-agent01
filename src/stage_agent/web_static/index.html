@@ -57,7 +57,7 @@ button.b:hover{background:var(--navy2)}button.b:active{transform:scale(.97)}butt
 pre{white-space:pre-wrap;word-break:break-word;font-size:13px;line-height:1.45;background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:12px;max-height:420px;overflow:auto;font-family:Consolas,"Courier New",monospace}
 .rowt{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 10px}.t{border:1px solid var(--line);border-radius:4px;padding:4px 11px;font-size:14.5px;background:#fff;animation:pop .5s both;transition:transform .2s,border-color .2s}
 .t:hover{transform:translateY(-2px);border-color:var(--navy2)}.t.p{border-color:var(--gold);background:#fffaf0}.t.clk{cursor:pointer}
-.doc{max-width:1200px}.doc h2,.doc h3,.doc h4{margin-top:24px;color:var(--navy)}.doc code{background:var(--soft);padding:1px 6px;border-radius:3px;font-family:Consolas,monospace;font-size:.85em}.doc p,.doc li{max-width:1000px}.doc .tw{margin:12px 0}
+.doc{max-width:none;width:100%}.doc h2,.doc h3,.doc h4{margin-top:24px;color:var(--navy)}.doc code{background:var(--soft);padding:1px 6px;border-radius:3px;font-family:Consolas,monospace;font-size:.85em}.doc p,.doc li{max-width:none}.doc .tw{margin:12px 0}
 iframe{width:100%;height:1700px;border:1px solid var(--line);border-radius:6px;background:#fff}
 .skel{height:18px;border-radius:4px;background:linear-gradient(90deg,#eceff4 25%,#f8f9fb 50%,#eceff4 75%);background-size:200% 100%;animation:shim 1.2s infinite;margin:8px 0}
 footer{border-top:1px solid var(--line);background:var(--soft);color:var(--mute);font-size:14.5px;padding:20px 0}
@@ -122,6 +122,13 @@ header .pad>*{position:relative;z-index:2}header .lead{max-width:760px}
 details.full{margin-top:16px}details.full summary{cursor:pointer;font-weight:700;color:var(--navy);padding:10px 0;font-size:18px}
 @keyframes dash{to{stroke-dashoffset:-28}}@keyframes nudge{50%{transform:translateX(5px)}}
 @media(max-width:900px){.tz{grid-template-columns:1fr}.tz .ar{transform:rotate(90deg);height:24px}}
+.doc pre{max-height:none;overflow-x:auto;white-space:pre}
+.doc.cols2{column-gap:56px}@media(min-width:1350px){.doc.cols2{column-count:2}}
+.doc.cols2 h2,.doc.cols2 h3,.doc.cols2 h4{break-after:avoid}.doc.cols2 .tw,.doc.cols2 pre{column-span:all;break-inside:avoid}.doc.cols2 p,.doc.cols2 li{break-inside:avoid-column}
+.cimg{height:120px;margin:-20px -24px 16px;border-radius:6px 6px 0 0;background-size:cover;background-position:center;position:relative;overflow:hidden}
+.cimg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,42,74,.05),rgba(11,42,74,.55))}
+.cimg i{position:absolute;inset:0;background:inherit;animation:kb 22s ease-in-out infinite alternate}
+.b-viewers{background-image:url(/static/img/audience.jpg)}.b-decisions{background-image:url(/static/img/circuit.jpg)}
 </style></head><body>
 <div class="topbar"><div class="pad"><span>Applied AI Engineering &middot; Research Prototype &middot; Decide &middot; Act &middot; Verify &middot; Measure</span>
 <span class="dev"><small>Developed by:</small> <b>Jarpula Nirjala</b></span></div></div>
@@ -151,9 +158,9 @@ details.full{margin-top:16px}details.full summary{cursor:pointer;font-weight:700
 <section id="demo"><div class="banner b-demo"><div><h2>Live demo</h2><span>Build a viewer and watch the real agent decide</span></div></div><div class="card"><p class="sec">Interactive</p><h2>Build a viewer and run the real agent</h2><p class="mute">The actual planner, verifier, model gateway and resilience code run on a synthetic catalogue. Change the situation and watch the goal, action, checks and fallbacks change.</p>
 <div class="form" id="form"></div><p style="margin-top:16px"><button class="b run" id="run">Run decision</button> <span class="mute" id="runmsg"></span></p></div><div id="demoout"></div></section>
 
-<section id="viewers"><div class="card"><p class="sec">Audit</p><h2>Viewer explorer</h2><input id="vq" placeholder="Search a viewer id, e.g. U-01991" size="38"> <span class="mute">1,800+ viewers: facts, goals, decisions, outcomes, learnings</span><div id="vlist" class="rowt" style="margin-top:12px"></div></div><div id="vout"></div></section>
+<section id="viewers"><div class="banner b-viewers"><div><h2>Viewer explorer</h2><span>Follow any one viewer from app open to judged outcome</span></div></div><div class="card"><p class="sec">Audit</p><h2>Viewer explorer</h2><input id="vq" placeholder="Search a viewer id, e.g. U-01991" size="38"> <span class="mute">1,800+ viewers: facts, goals, decisions, outcomes, learnings</span><div id="vlist" class="rowt" style="margin-top:12px"></div></div><div id="vout"></div></section>
 
-<section id="decisions"><div class="card"><p class="sec">Audit</p><h2>Decision browser</h2><div class="form" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
+<section id="decisions"><div class="banner b-decisions"><div><h2>Decision browser</h2><span>Every decision, including the ones that did nothing, with the reason</span></div></div><div class="card"><p class="sec">Audit</p><h2>Decision browser</h2><div class="form" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
 <label>Status<select id="fs"><option value="">any</option></select></label><label>Arm<select id="fa"><option value="">any</option><option>agent</option><option>holdout</option></select></label>
 <label>Goal<select id="fg"><option value="">any</option></select></label><label>Search<input id="fq" placeholder="viewer or reason"></label></div>
 <p><button class="b" id="fgo">Search</button> <span class="mute" id="ftot"></span></p><div class="tw"><table><thead><tr><th>Decision</th><th>Viewer</th><th>Arm</th><th>Status</th><th>Action</th><th>Goal</th><th>Conf.</th><th>Latency s</th><th>Reason</th></tr></thead><tbody id="dbody"></tbody></table></div>
@@ -163,13 +170,13 @@ details.full{margin-top:16px}details.full summary{cursor:pointer;font-weight:700
 <section id="impactp"><div class="banner b-impact"><div><h2>Impact report</h2><span>Agent versus randomized holdout, honestly measured</span></div></div><div class="card doc" id="impactdoc"><div class="skel"></div><div class="skel"></div></div></section>
 <section id="finalp"><div class="banner b-final"><div><h2>Final report</h2><span>What happened, and every data issue we handled</span></div></div><div class="card doc" id="finaldoc"><div class="skel"></div><div class="skel"></div></div></section>
 <section id="arch"><div class="banner b-arch"><div><h2>Architecture</h2><span>Click any box to see what it does, which rules it enforces and where the code lives</span></div></div>
-<div class="card"><p class="sec">The whole loop</p><h2>From a trigger to a judged outcome</h2>
+<div class="card"><div class="cimg" style="background-image:url(/static/img/analytics.jpg);height:150px"><i></i></div><p class="sec">The whole loop</p><h2>From a trigger to a judged outcome</h2>
 <div class="ctl"><button class="b" id="fcplay">&#9654; Walk through the pipeline</button><button class="b" id="fcstop" style="background:#fff;color:var(--navy);border:1px solid var(--navy)">Stop</button><span class="mute">or click any box</span></div>
 <div class="lg"><span><i style="background:#eef3fa;border-color:#143d6b"></i>input</span><span><i style="background:#fffaf0;border-color:#a8812c"></i>gate (decision)</span><span><i style="background:#fdf0ef;border-color:#b3261e"></i>recorded stop</span><span><i style="background:#fff;border-color:#143d6b"></i>processing</span><span><i style="background:#eaf6f1;border-color:#1b7f5c"></i>independent verifier</span><span><i style="background:#f3effd;border-color:#5b3df5"></i>measurement</span></div>
 <div class="fc"><svg id="fcsvg" viewBox="0 0 1200 800" role="img" aria-label="Decision pipeline flowchart"><defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#143d6b"/></marker><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b3261e"/></marker></defs></svg></div>
 <div class="dtl" id="fcdtl"><h3>Select a step</h3><span class="mute">Each box is a real component of the system. Dashed arrows show data moving; gold boxes are the checks that can stop a decision before any model or content work happens.</span></div></div>
 
-<div class="two"><div class="card"><p class="sec">When things fail</p><h2>The degradation ladder</h2><div class="lad" id="lad">
+<div class="two"><div class="card"><div class="cimg" style="background-image:url(/static/img/servers.jpg)"><i></i></div><p class="sec">When things fail</p><h2>The degradation ladder</h2><div class="lad" id="lad">
 <div class="st" style="background:#e3f4ec;margin-right:0"><em>1</em><b>Everything healthy</b><span>Facts + model second opinion + personalised page + proportionate message</span></div>
 <div class="st" style="background:#eaf4df;margin-right:4%"><em>2</em><b>Model slow, down or garbled</b><span>Safe parse, one retry for bad JSON, circuit breaker; rules choose the goal, same page</span></div>
 <div class="st" style="background:#f6f2d6;margin-right:8%"><em>3</em><b>Queue wait above 8 s</b><span>Optional model call skipped; decision still personalised</span></div>
@@ -178,18 +185,18 @@ details.full{margin-top:16px}details.full summary{cursor:pointer;font-weight:700
 <div class="st" style="background:#f8cfc8;margin-right:20%"><em>6</em><b>Verifier rejects the plan</b><span>Repair once with a minimal page; drop a failing message; keep what passes</span></div>
 <div class="st" style="background:#f3bdb8;margin-right:24%"><em>7</em><b>Nothing safe or on time</b><span>No action, recorded with its reason. A late or wrong action is never published</span></div></div></div>
 
-<div class="card"><p class="sec">Proof</p><h2>How impact is measured</h2>
+<div class="card"><div class="cimg" style="background-image:url(/static/img/dashboard.jpg)"><i></i></div><p class="sec">Proof</p><h2>How impact is measured</h2>
 <div class="mf"><div class="m"><b>1. Randomized arms</b><span>Every viewer is agent or holdout, at random</span></div><div class="a">&#10140;</div>
 <div class="m"><b>2. Same goal both arms</b><span>Reference goal from pre-treatment facts; holdout gets a computation-only counterfactual</span></div><div class="a">&#10140;</div>
 <div class="m"><b>3. Act, or do nothing</b><span>Agent arm: page / message. Holdout: zero actions, zero model calls</span></div><div class="a">&#10140;</div>
 <div class="m"><b>4. Simulate 14 days</b><span>Outcome events for everyone, any seed</span></div><div class="a">&#10140;</div>
 <div class="m"><b>5. Judge attributably</b><span>Only events whose true time is inside the goal window</span></div><div class="a">&#10140;</div>
-<div class="m"><b>6. Intention-to-treat</b><span>Agent minus holdout with a confidence interval; served-vs-rest shown only as the biased contrast</span></div></div></div></div><div class="card"><p class="sec">Who is trusted</p><h2>Trust boundaries</h2>
+<div class="m"><b>6. Intention-to-treat</b><span>Agent minus holdout with a confidence interval; served-vs-rest shown only as the biased contrast</span></div></div></div></div><div class="card"><div class="cimg" style="background-image:url(/static/img/circuit.jpg);height:150px"><i></i></div><p class="sec">Who is trusted</p><h2>Trust boundaries</h2>
 <div class="tz"><div class="z u"><h4>Untrusted input</h4><ul><li>catalogue descriptions</li><li>search queries, deeplinks</li><li>model output</li><li>phone clocks</li><li>profile snapshot (a day old)</li></ul></div><div class="ar">&#10140;</div>
 <div class="z g"><h4>Gatekeepers</h4><ul><li>scanner, then description discarded</li><li>one strict deeplink pattern</li><li>JSON schema + claim check</li><li>sent&minus;occurred, received_at</li><li>freshness and precedence rules</li></ul></div><div class="ar">&#10140;</div>
 <div class="z t"><h4>Trusted core</h4><ul><li>rule engine</li><li>independent verifier</li><li>consent / cap ledgers</li><li>arms table (holdout)</li></ul></div><div class="ar">&#10140;</div>
 <div class="z o"><h4>Effects</h4><ul><li>actions.jsonl</li><li>viewer state + journal</li><li>outcomes, learnings</li><li>reports</li></ul></div></div>
-<p class="mute" style="margin:12px 0 0">Text from the data is content, never instruction. A model answer is a claim: it is accepted only if the rule engine independently finds the goal eligible and its evidence resolves. The reason text it writes is ignored.</p></div><details class="full"><summary>Read the full architecture note</summary><div class="card doc" id="archdoc"><div class="skel"></div><div class="skel"></div></div></details></section>
+<p class="mute" style="margin:12px 0 0">Text from the data is content, never instruction. A model answer is a claim: it is accepted only if the rule engine independently finds the goal eligible and its evidence resolves. The reason text it writes is ignored.</p></div><details class="full"><summary>Read the full architecture note</summary><div class="card doc cols2" id="archdoc"><div class="skel"></div><div class="skel"></div></div></details></section>
 <section id="limits"><div class="banner b-limits"><div><h2>Known limitations</h2><span>What was left incomplete on purpose, and why</span></div></div><div class="fl" id="fl"></div><div class="tl" id="tl"><div class="prog" id="prog"></div></div></section>
 </main>
 <footer><div class="pad">One User, One Agent &middot; Lifecycle agent research prototype &middot; Synthetic data only &middot; Built with the Python standard library &middot; Photographs: Unsplash.</div></footer>

@@ -41,7 +41,7 @@ def md_to_html(md: str) -> str:
     """Headings, tables, bullet and numbered lists (wrapped lines joined), paragraphs, bold/italic/code. Everything escaped."""
     lines = md.split("\n")
     out, i, n = [], 0, len(lines)
-    structural = re.compile(r"^(#{1,4}\s|\|)")
+    structural = re.compile(r"^(#{1,4}\s|\||```)")
     item = re.compile(r"^(\s*)(?:[-*]|\d+\.)\s+(.*)")
     while i < n:
         ln = lines[i]
@@ -53,6 +53,15 @@ def md_to_html(md: str) -> str:
                 out.append("<tr>" + "".join("<td>%s</td>" % _inline(c.strip()) for c in lines[i].strip().strip("|").split("|")) + "</tr>")
                 i += 1
             out.append("</tbody></table></div>")
+            continue
+        if ln.strip().startswith("```"):   # fenced code block: keep line breaks, escape everything
+            i += 1
+            code = []
+            while i < n and not lines[i].strip().startswith("```"):
+                code.append(lines[i])
+                i += 1
+            i += 1
+            out.append("<pre>%s</pre>" % html.escape("\n".join(code)))
             continue
         m = re.match(r"^(#{1,4})\s+(.*)", ln)
         if m:

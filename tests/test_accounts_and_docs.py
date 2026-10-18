@@ -92,3 +92,8 @@ def test_signup_flow_over_http(tmp_path):
         assert call("/api/limits", cookie=cookie)[0] == 200 and len(json.loads(call("/api/limits", cookie=cookie)[1])) >= 12
     finally:
         srv.shutdown()
+
+
+def test_fenced_code_block_is_preserved_and_escaped():
+    h = md_to_html("Intro text\n\n```\na <b> | b\n   indented\n```\n\nAfter.\n")
+    assert "<pre>a &lt;b&gt; | b\n   indented</pre>" in h and "<p>After.</p>" in h and "<code>" not in h
