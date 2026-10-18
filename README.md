@@ -59,6 +59,18 @@ Render: New + > Blueprint > pick this repo (it reads `render.yaml`), or create a
 `echo ok` and start command `PYTHONPATH=src python -m stage_agent.web`. No dependencies, health check `/healthz`.
 Tabs: overview, live demo, viewer explorer, decision browser, dashboard, impact report, final report, architecture, limitations.
 
+### Sign-in
+
+The site sits behind a sign-in page (HMAC-signed session cookie, per-IP brute-force throttle, no password in the repo).
+Set the account through environment variables:
+
+| variable | meaning |
+|---|---|
+| `APP_USERNAME` | default `jarpula` |
+| `APP_PASSWORD` | the password. On Render `render.yaml` makes Render generate one: read it in the service's **Environment** tab. If unset locally, a random one is printed in the server log |
+| `SECRET_KEY` | signs session cookies (Render generates it) |
+| `ALLOW_GUEST` | `1` (default) shows "Continue as guest": read-only browsing, no live demo; `0` disables guests |
+
 ## What is in `sample_run/`
 
 | file | content |

@@ -12,6 +12,11 @@ a{color:var(--navy2)}
 .topbar{background:var(--navy);color:#e9eef5;font-size:13.5px;letter-spacing:.4px;padding:7px 0}.topbar .pad{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 header{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fff,#f7f9fc);position:relative;overflow:hidden}
 header .pad{padding-top:40px;padding-bottom:30px;position:relative}
+.dev{display:inline-flex;align-items:baseline;gap:8px;animation:fade .9s both}.dev small{font-size:12.5px;letter-spacing:.8px;color:#b9c7da;text-transform:uppercase}.dev b{font-size:21px;color:#fff;letter-spacing:.5px;border-bottom:2px solid var(--gold);padding-bottom:1px}
+.ltr{display:inline-block;opacity:0;transform:translateY(.7em) rotate(-6deg);animation:ltr .7s cubic-bezier(.2,.9,.3,1.3) forwards,wave 5s 2.2s ease-in-out infinite}
+.ltr.sp{width:.28em}h1:hover .ltr{color:var(--gold);transition:color .3s}
+@keyframes ltr{to{opacity:1;transform:none}}@keyframes wave{0%,86%,100%{transform:none}93%{transform:translateY(-.14em)}}
+.who{margin-left:auto;display:flex;align-items:center;gap:10px;padding-left:16px;white-space:nowrap}.who .pill{margin:0}.who button{background:none;border:1px solid var(--line);border-radius:4px;padding:5px 12px;cursor:pointer;color:var(--navy);font-weight:700;transition:background .2s,color .2s}.who button:hover{background:var(--navy);color:#fff}
 .crest{display:inline-flex;align-items:center;gap:10px;color:var(--navy);font-weight:700;letter-spacing:2px;font-size:13px;text-transform:uppercase}
 .crest i{width:34px;height:34px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-style:normal;font-size:16px;animation:spin 14s linear infinite}
 h1{font-size:clamp(34px,5vw,58px);line-height:1.08;margin:14px 0 8px;color:var(--navy);font-weight:700;letter-spacing:-.5px}
@@ -62,13 +67,14 @@ footer{border-top:1px solid var(--line);background:var(--soft);color:var(--mute)
 @media(max-width:700px){.bar span{width:130px}.two{grid-template-columns:1fr}th,td{padding:6px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style></head><body>
-<div class="topbar"><div class="pad"><span>Applied AI Engineering &middot; Research Prototype</span><span>Decide &middot; Act &middot; Verify &middot; Measure</span></div></div>
+<div class="topbar"><div class="pad"><span>Applied AI Engineering &middot; Research Prototype &middot; Decide &middot; Act &middot; Verify &middot; Measure</span>
+<span class="dev"><small>Developed by:</small> <b>Jarpula Nirjala</b></span></div></div>
 <header><div class="pad"><div class="crest"><i>&#9670;</i> Lifecycle Agent Programme</div>
 <h1>One User, One Agent</h1>
 <p class="lead">Every viewer receives a dedicated agent that chooses one measurable goal, decides what to change (or to do nothing), acts within a strict latency budget, is checked by an independent verifier, and is judged against a randomized holdout.</p>
 <div class="rule"></div>
 <div class="chips"><span class="chip">Evidence with provenance</span><span class="chip">Independent verification</span><span class="chip">Safe degradation</span><span class="chip">Randomized holdout</span><span class="chip">Honest measurement</span></div></div></header>
-<nav><div class="pad"><button data-t="overview" class="on">Overview</button><button data-t="demo">Live Demo</button><button data-t="viewers">Viewers</button><button data-t="decisions">Decisions</button><button data-t="dashboard">Dashboard</button><button data-t="impact">Impact Report</button><button data-t="final">Final Report</button><button data-t="arch">Architecture</button><button data-t="limits">Limitations</button></div></nav>
+<nav><div class="pad"><button data-t="overview" class="on">Overview</button><button data-t="demo">Live Demo</button><button data-t="viewers">Viewers</button><button data-t="decisions">Decisions</button><button data-t="dashboard">Dashboard</button><button data-t="impact">Impact Report</button><button data-t="final">Final Report</button><button data-t="arch">Architecture</button><button data-t="limits">Limitations</button><span class="who" id="who"></span></div></nav>
 <main class="pad">
 <section id="overview" class="on"><p class="sec">Results of the replay</p><div class="grid" id="kpis"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
 <div class="two"><div class="card rv"><p class="sec">Behaviour</p><h2>What the agent did with each trigger</h2><div id="mix"></div></div>
@@ -104,7 +110,14 @@ footer{border-top:1px solid var(--line);background:var(--soft);color:var(--mute)
 <script>
 const $=s=>document.querySelector(s),pct=x=>x==null?"n/a":(x*100).toFixed(1)+"%",pp=x=>(x>=0?"+":"")+(x*100).toFixed(1)+" pp";
 const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const J=async(u,o)=>{const r=await fetch(u,o);return r.json()};
+const J=async(u,o)=>{const r=await fetch(u,o);if(r.status==401){location.href="/signin";return {}}return r.json()};
+let ROLE="guest";
+fetch("/api/me").then(r=>r.json()).then(m=>{if(!m.signed_in){location.href="/signin";return}ROLE=m.role;
+ $("#who").innerHTML=`<span class=pill>${m.role=="user"?"Signed in: "+esc(m.name):"Guest (read-only)"}</span><button id="out">Sign out</button>`;
+ $("#out").onclick=async()=>{await fetch("/api/logout",{method:"POST"});location.href="/signin"}});
+// per-letter animation for the title
+(function(){const h=document.querySelector("h1");const t=h.textContent;h.setAttribute("aria-label",t);h.textContent="";
+ [...t].forEach((c,i)=>{const s=document.createElement("span");s.className="ltr"+(c==" "?" sp":"");s.setAttribute("aria-hidden","true");s.textContent=c==" "?" ":c;s.style.animationDelay=(i*70)+"ms,"+(2200+i*90)+"ms";h.appendChild(s)})})();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.08});
 const reveal=()=>document.querySelectorAll(".rv:not(.in)").forEach(e=>io.observe(e));reveal();
 function countUp(el,to,suffix){const dur=900,t0=performance.now(),dec=String(to).includes(".")?1:0;const f=t=>{const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);el.textContent=(to*e).toFixed(dec)+suffix;if(k<1)requestAnimationFrame(f)};requestAnimationFrame(f)}

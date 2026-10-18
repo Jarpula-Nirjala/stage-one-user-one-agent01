@@ -10,6 +10,7 @@ import os
 import re
 import sys
 import threading
+import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlparse
 
@@ -154,6 +155,8 @@ class State:
 
 
 STATE = None
+AUTH = None
+PUBLIC_PATHS = ("/signin", "/healthz", "/api/login", "/api/me")
 
 
 class H(BaseHTTPRequestHandler):
@@ -171,20 +174,56 @@ class H(BaseHTTPRequestHandler):
         self.send_header("Content-Type", ctype)
         self.send_header("Content-Length", str(len(b)))
         self.send_header("X-Content-Type-Options", "nosniff")
-        self.send_header("Cache-Control", "no-store" if ctype.startswith("application/json") else "public, max-age=300")
+        self.send_header("X-Frame-Options", "SAMEORIGIN")
+        self.send_header("Referrer-Policy", "same-origin")
+        self.send_header("Cache-Control", "no-store")
         for k, v in (extra or {}).items():
             self.send_header(k, v)
         self.end_headers()
         self.wfile.write(b)
 
+    def _cookie(self):
+        for part in (self.headers.get("Cookie") or "").split(";"):
+            k, _, v = part.strip().partition("=")
+            if k == "sid":
+                return v
+        return None
+
+    def _session(self):
+        return AUTH.read_cookie(self._cookie())
+
+    def _ip(self):
+        return (self.headers.get("X-Forwarded-For") or self.client_address[0]).split(",")[0].strip()
+
+    def _set_cookie(self, value, max_age):
+        secure = "; Secure" if self.headers.get("X-Forwarded-Proto") == "https" else ""
+        return {"Set-Cookie": "sid=%s; Path=/; HttpOnly; SameSite=Lax; Max-Age=%d%s" % (value, max_age, secure)}
+
+    def _redirect(self, where):
+        self.send_response(302)
+        self.send_header("Location", where)
+        self.send_header("Content-Length", "0")
+        self.end_headers()
+
     def do_GET(self):
         u = urlparse(self.path)
         path, q = u.path, parse_qs(u.query)
         try:
-            if path in ("/", "/index.html"):
-                return self._send(200, open(os.path.join(STATIC, "index.html"), encoding="utf-8").read(), "text/html; charset=utf-8")
             if path == "/healthz":
                 return self._send(200, {"ok": True})
+            sess = self._session()
+            if path == "/signin":
+                if sess:
+                    return self._redirect("/")
+                return self._send(200, open(os.path.join(STATIC, "signin.html"), encoding="utf-8").read().replace("__GUEST__", "1" if AUTH.allow_guest else "0"), "text/html; charset=utf-8")
+            if path == "/api/me":
+                return self._send(200, {"signed_in": bool(sess), "role": sess[0] if sess else None, "name": sess[1] if sess else None})
+            if not sess:   # everything else needs a session (user or guest)
+                if path.startswith("/api/"):
+                    return self._send(401, {"error": "sign in required"})
+                return self._redirect("/signin")
+            if path in ("/", "/index.html"):
+                return self._send(200, open(os.path.join(STATIC, "index.html"), encoding="utf-8").read(), "text/html; charset=utf-8")
             if path == "/dashboard":
                 return self._send(200, open(os.path.join(STATE.run, "dashboard.html"), encoding="utf-8").read(), "text/html; charset=utf-8")
             if path == "/api/summary":
@@ -218,28 +257,58 @@ class H(BaseHTTPRequestHandler):
             sys.stderr.write("error: %r\n" % (e,))
             return self._send(500, {"error": "internal error"})
 
+    def _body(self, limit=20000):
+        n = int(self.headers.get("Content-Length", "0"))
+        if n > limit:
+            raise ValueError("payload too large")
+        v = json.loads(self.rfile.read(n) or b"{}")
+        return v if isinstance(v, dict) else {}
+
     def do_POST(self):
-        if urlparse(self.path).path != "/api/demo":
-            return self._send(404, {"error": "not found"})
+        path = urlparse(self.path).path
         try:
-            n = int(self.headers.get("Content-Length", "0"))
-            if n > 20000:
-                return self._send(413, {"error": "payload too large"})
-            body = json.loads(self.rfile.read(n) or b"{}")
-            from .demo_world import run_scenario
-            with STATE.lock:   # the demo mutates module counters; serialise it
-                return self._send(200, run_scenario(body if isinstance(body, dict) else {}))
+            if path == "/api/login":
+                ip = self._ip()
+                if AUTH.blocked(ip):
+                    return self._send(429, {"error": "too many attempts; try again in a few minutes"})
+                b = self._body(2000)
+                if b.get("guest"):
+                    if not AUTH.allow_guest:
+                        return self._send(403, {"error": "guest access is disabled"})
+                    return self._send(200, {"ok": True, "role": "guest"}, extra=self._set_cookie(AUTH.make_cookie("guest", "Guest"), AUTH.ttl))
+                if AUTH.check(str(b.get("username", ""))[:100], str(b.get("password", ""))[:200]):
+                    AUTH.ok(ip)
+                    return self._send(200, {"ok": True, "role": "user"}, extra=self._set_cookie(AUTH.make_cookie("user", AUTH.username), AUTH.ttl))
+                AUTH.fail(ip)
+                time.sleep(0.4)   # slow down guessing
+                return self._send(401, {"error": "incorrect username or password"})
+            if path == "/api/logout":
+                return self._send(200, {"ok": True}, extra=self._set_cookie("", 0))
+            sess = self._session()
+            if not sess:
+                return self._send(401, {"error": "sign in required"})
+            if path == "/api/demo":
+                if sess[0] != "user":
+                    return self._send(403, {"error": "the live demo needs a signed-in account; guests are read-only"})
+                from .demo_world import run_scenario
+                body = self._body()
+                with STATE.lock:   # serialise: keeps CPU and memory bounded
+                    return self._send(200, run_scenario(body))
+            return self._send(404, {"error": "not found"})
         except Exception as e:
-            sys.stderr.write("demo error: %r\n" % (e,))
-            return self._send(400, {"error": "could not run that scenario"})
+            sys.stderr.write("post error: %r\n" % (e,))
+            return self._send(400, {"error": "bad request"})
 
 
 def serve(host: str = "0.0.0.0", port: int = None, run_dir: str = None):
-    global STATE
-    STATE = State(run_dir or find_run_dir())
+    global STATE, AUTH
+    from .auth import Auth
+    STATE, AUTH = State(run_dir or find_run_dir()), Auth()
     port = port or int(os.environ.get("PORT", "8000"))
     srv = ThreadingHTTPServer((host, port), H)
     print("serving %d decisions / %d viewers from %s on http://%s:%d" % (len(STATE.rows), len(STATE.index), STATE.run, host, port), flush=True)
+    if AUTH.generated:
+        print("APP_PASSWORD not set: temporary credentials for this run -> username: %s  password: %s" % (AUTH.username, AUTH.password), flush=True)
     srv.serve_forever()
 
 

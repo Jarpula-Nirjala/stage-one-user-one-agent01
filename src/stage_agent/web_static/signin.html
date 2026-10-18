@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sign in | One User, One Agent</title>
+<style>
+:root{--navy:#0b2a4a;--navy2:#143d6b;--gold:#a8812c;--ink:#1b1b1b;--mute:#555b66;--line:#d8dce3;--bad:#b3261e}
+*{box-sizing:border-box}html,body{height:100%}
+body{margin:0;background:#fff;color:var(--ink);font-family:"Times New Roman",Times,serif;font-size:17px;line-height:1.5;display:flex;flex-direction:column}
+input,button{font-family:inherit;font-size:inherit}
+.topbar{background:var(--navy);color:#e9eef5;font-size:13.5px;letter-spacing:.4px;padding:7px clamp(16px,4vw,72px);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.dev{display:inline-flex;align-items:baseline;gap:8px}.dev small{font-size:12.5px;letter-spacing:.8px;color:#b9c7da;text-transform:uppercase}.dev b{font-size:21px;color:#fff;border-bottom:2px solid var(--gold)}
+.wrap{flex:1;display:grid;grid-template-columns:1.1fr 1fr;min-height:0}
+.hero{background:linear-gradient(160deg,#fff,#eef3fa);padding:clamp(24px,6vw,90px);display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--line);position:relative;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;border:2px solid rgba(168,129,44,.25);animation:drift 14s ease-in-out infinite}
+.hero::before{width:380px;height:380px;right:-120px;bottom:-120px}.hero::after{width:240px;height:240px;left:-80px;top:-70px;animation-delay:-6s;border-color:rgba(20,61,107,.18)}
+.crest{display:inline-flex;align-items:center;gap:10px;color:var(--navy);font-weight:700;letter-spacing:2px;font-size:13px;text-transform:uppercase}
+.crest i{width:34px;height:34px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-style:normal;animation:spin 14s linear infinite}
+h1{font-size:clamp(36px,5vw,64px);line-height:1.08;margin:16px 0 10px;color:var(--navy);letter-spacing:-.5px}
+.ltr{display:inline-block;opacity:0;transform:translateY(.7em) rotate(-6deg);animation:ltr .7s cubic-bezier(.2,.9,.3,1.3) forwards,wave 5s 2.2s ease-in-out infinite}
+.lead{color:#2c3340;font-size:clamp(18px,1.5vw,21px);max-width:560px;animation:fade 1s .9s both}
+.rule{height:3px;background:linear-gradient(90deg,var(--gold),var(--navy));width:0;margin:18px 0;border-radius:2px;animation:draw 1.4s .3s ease-out forwards}
+ul{padding-left:20px;color:var(--mute);animation:fade 1s 1.2s both}li{margin:4px 0}
+.panel{display:flex;align-items:center;justify-content:center;padding:32px clamp(16px,4vw,64px)}
+.card{width:min(440px,100%);border:1px solid var(--line);border-top:4px solid var(--navy);border-radius:6px;padding:30px 30px 26px;box-shadow:0 12px 36px rgba(11,42,74,.10);animation:rise .8s .3s both}
+h2{margin:0 0 4px;color:var(--navy);font-size:28px}.sub{color:var(--mute);margin:0 0 18px}
+label{display:block;font-size:14.5px;color:var(--mute);margin:12px 0 4px}
+input{width:100%;border:1px solid #b9c0cb;border-radius:4px;padding:11px 12px;transition:border-color .2s,box-shadow .2s}
+input:focus{outline:0;border-color:var(--navy2);box-shadow:0 0 0 3px rgba(20,61,107,.15)}
+.pw{position:relative}.pw button{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:none;border:0;color:var(--navy2);cursor:pointer;font-weight:700;padding:6px 8px}
+.go{width:100%;margin-top:20px;background:var(--navy);color:#fff;border:0;border-radius:4px;padding:12px;font-weight:700;letter-spacing:.4px;cursor:pointer;transition:background .25s,transform .15s}
+.go:hover{background:var(--navy2)}.go:active{transform:scale(.98)}.go[disabled]{opacity:.6;cursor:wait}
+.alt{width:100%;margin-top:10px;background:#fff;color:var(--navy);border:1px solid var(--navy);border-radius:4px;padding:11px;font-weight:700;cursor:pointer;transition:background .2s,color .2s}.alt:hover{background:var(--navy);color:#fff}
+.or{display:flex;align-items:center;gap:10px;color:var(--mute);margin:16px 0 0;font-size:14px}.or::before,.or::after{content:"";flex:1;height:1px;background:var(--line)}
+.err{color:var(--bad);min-height:22px;margin-top:12px;font-size:15.5px}.err.shake{animation:shake .4s}
+.note{color:var(--mute);font-size:13.5px;margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
+@keyframes ltr{to{opacity:1;transform:none}}@keyframes wave{0%,86%,100%{transform:none}93%{transform:translateY(-.14em)}}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@keyframes draw{to{width:min(360px,70%)}}@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes drift{50%{transform:translate(18px,-14px) scale(1.05)}}@keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+@media(max-width:860px){.wrap{grid-template-columns:1fr}.hero{border-right:0;border-bottom:1px solid var(--line);padding:28px 20px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.ltr{opacity:1;transform:none}.rule{width:200px}}
+</style></head><body>
+<div class="topbar"><span>Applied AI Engineering &middot; Research Prototype</span><span class="dev"><small>Developed by:</small> <b>Jarpula Nirjala</b></span></div>
+<div class="wrap">
+<div class="hero"><div class="crest"><i>&#9670;</i> Lifecycle Agent Programme</div>
+<h1 id="t">One User, One Agent</h1><div class="rule"></div>
+<p class="lead">A dedicated agent for every viewer: one measurable goal, an independent verifier, safe fallbacks, and impact proven against a randomized holdout.</p>
+<ul><li>Live demo that runs the real agent</li><li>Every decision auditable, per viewer</li><li>Honest, holdout-based impact report</li></ul></div>
+<div class="panel"><form class="card" id="f" autocomplete="on">
+<h2>Sign in</h2><p class="sub">Use your account to open the full site and the live demo.</p>
+<label for="u">Username</label><input id="u" name="username" autocomplete="username" required>
+<label for="p">Password</label><div class="pw"><input id="p" name="password" type="password" autocomplete="current-password" required><button type="button" id="show">Show</button></div>
+<div class="err" id="e" role="alert"></div>
+<button class="go" id="go" type="submit">Sign in</button>
+<div id="g" style="display:none"><div class="or">or</div><button class="alt" type="button" id="guest">Continue as guest (read-only)</button></div>
+<div class="note">Guests can browse every report, viewer and decision. Running the live demo needs a signed-in account.</div></form></div></div>
+<script>
+const t=document.getElementById("t"),txt=t.textContent;t.setAttribute("aria-label",txt);t.textContent="";
+[...txt].forEach((c,i)=>{const s=document.createElement("span");s.className="ltr";s.setAttribute("aria-hidden","true");s.textContent=c==" "?" ":c;s.style.animationDelay=(i*70)+"ms,"+(2200+i*90)+"ms";t.appendChild(s)});
+if("__GUEST__"=="1")document.getElementById("g").style.display="block";
+const e=document.getElementById("e");
+async function login(body,btn){btn.disabled=true;e.textContent="";
+ try{const r=await fetch("/api/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});const j=await r.json();
+  if(r.ok){location.href="/"}else{e.textContent=j.error||"Sign-in failed";e.classList.remove("shake");void e.offsetWidth;e.classList.add("shake");btn.disabled=false}}
+ catch(x){e.textContent="Network error. Please try again.";btn.disabled=false}}
+document.getElementById("f").onsubmit=ev=>{ev.preventDefault();login({username:document.getElementById("u").value,password:document.getElementById("p").value},document.getElementById("go"))};
+document.getElementById("guest").onclick=()=>login({guest:true},document.getElementById("guest"));
+document.getElementById("show").onclick=ev=>{const p=document.getElementById("p");p.type=p.type=="password"?"text":"password";ev.target.textContent=p.type=="password"?"Show":"Hide"};
+</script></body></html>

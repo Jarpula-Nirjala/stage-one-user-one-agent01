@@ -11,3 +11,11 @@ services:
         value: "3.11.9"
       - key: QUIET
         value: "1"
+      - key: APP_USERNAME
+        value: jarpula
+      - key: APP_PASSWORD        # Render generates a random value: read it in the service's Environment tab
+        generateValue: true
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOW_GUEST
+        value: "1"
