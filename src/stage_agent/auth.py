@@ -16,6 +16,7 @@ import secrets
 import threading
 import time
 from typing import Optional, Tuple
+from urllib.parse import quote, unquote
 
 
 class Auth:
@@ -29,6 +30,8 @@ class Auth:
         self.allow_guest = env.get("ALLOW_GUEST", "1") == "1"
         self.ttl = int(float(env.get("SESSION_HOURS", "12")) * 3600)
         self._fails = {}
+        self._regs = {}
+        self.users = None          # optional UserStore (sign-up); set by the web app
         self._lock = threading.Lock()
 
     # ---- cookies
@@ -37,8 +40,9 @@ class Auth:
 
     def make_cookie(self, role: str, name: str, now: Optional[float] = None) -> str:
         exp = int((now or time.time()) + self.ttl)
-        payload = "%s|%s|%d" % (role, name, exp)
-        return "%s~%s~%d~%s" % (role, name.replace("~", ""), exp, self._mac(payload))
+        safe = quote(name, safe="").replace("~", "%7E")      # display names are free text: keep the cookie value clean
+        payload = "%s|%s|%d" % (role, safe, exp)
+        return "%s~%s~%d~%s" % (role, safe, exp, self._mac(payload))
 
     def read_cookie(self, value: Optional[str], now: Optional[float] = None) -> Optional[Tuple[str, str]]:
         if not value:
@@ -55,7 +59,7 @@ class Auth:
                 return None
         except ValueError:
             return None
-        return (role, name) if role in ("user", "guest") else None
+        return (role, unquote(name)) if role in ("user", "guest") else None
 
     # ---- credentials and throttling
     def check(self, username: str, password: str) -> bool:
@@ -75,6 +79,20 @@ class Auth:
             self._fails.setdefault(ip, []).append(now or time.time())
             if len(self._fails) > 5000:      # bound memory
                 self._fails.clear()
+
+    def reg_blocked(self, ip: str, now: Optional[float] = None) -> bool:
+        """At most 8 sign-up attempts per IP per hour (keeps the user file and CPU bounded)."""
+        now = now or time.time()
+        with self._lock:
+            hits = [t for t in self._regs.get(ip, []) if now - t < 3600]
+            self._regs[ip] = hits
+            return len(hits) >= 8
+
+    def reg_hit(self, ip: str, now: Optional[float] = None):
+        with self._lock:
+            self._regs.setdefault(ip, []).append(now or time.time())
+            if len(self._regs) > 5000:
+                self._regs.clear()
 
     def ok(self, ip: str):
         with self._lock:

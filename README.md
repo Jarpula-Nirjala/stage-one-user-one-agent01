@@ -59,7 +59,12 @@ Render: New + > Blueprint > pick this repo (it reads `render.yaml`), or create a
 `echo ok` and start command `PYTHONPATH=src python -m stage_agent.web`. No dependencies, health check `/healthz`.
 Tabs: overview, live demo, viewer explorer, decision browser, dashboard, impact report, final report, architecture, limitations.
 
-### Sign-in
+### Sign-in and sign-up
+
+New visitors use the **Create account** tab (name, email, password; passwords are stored only as salted PBKDF2 hashes in
+`$DATA_DIR/users.json`, capped at 500 accounts). On Render's free plan the disk is ephemeral, so accounts survive sleeps but
+not a redeploy; the admin account below always works. Photographs on the site are from Unsplash (free licence), stored in
+`src/stage_agent/web_static/img/` (about 1 MB).
 
 The site sits behind a sign-in page (HMAC-signed session cookie, per-IP brute-force throttle, no password in the repo).
 Set the account through environment variables:

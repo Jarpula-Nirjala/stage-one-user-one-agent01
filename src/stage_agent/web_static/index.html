@@ -62,6 +62,36 @@ iframe{width:100%;height:1700px;border:1px solid var(--line);border-radius:6px;b
 .skel{height:18px;border-radius:4px;background:linear-gradient(90deg,#eceff4 25%,#f8f9fb 50%,#eceff4 75%);background-size:200% 100%;animation:shim 1.2s infinite;margin:8px 0}
 footer{border-top:1px solid var(--line);background:var(--soft);color:var(--mute);font-size:14.5px;padding:20px 0}
 .callout{border-left:4px solid var(--gold);background:#fffaf0;padding:10px 16px;margin:10px 0;border-radius:0 4px 4px 0}
+header .heroimg{position:absolute;top:0;right:0;bottom:0;width:58%;background:url(/static/img/audience.jpg) center/cover;animation:kb 28s ease-in-out infinite alternate;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 55%);mask-image:linear-gradient(90deg,transparent 0,#000 55%);opacity:.95}
+header .pad>*{position:relative;z-index:2}header .lead{max-width:760px}
+.band{position:relative;margin:8px calc(-1*clamp(16px,4vw,72px)) 28px;min-height:300px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(11,42,74,.9),rgba(11,42,74,.55)),url(/static/img/seats.jpg) center/cover fixed}
+.band div{padding:40px clamp(16px,4vw,72px);max-width:900px}.band h2{color:#fff;font-size:clamp(26px,3.2vw,40px);margin:0 0 8px}.band p{margin:0;font-size:19px;color:#e6edf6}
+.steps{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-bottom:24px}
+.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(11,42,74,.06);transition:transform .35s,box-shadow .35s}
+.step:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(11,42,74,.16)}
+.step .ph{height:170px;overflow:hidden;position:relative}.step .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}.step:hover .ph img{transform:scale(1.12)}
+.step .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(11,42,74,.6))}
+.step .no{position:absolute;left:14px;bottom:10px;z-index:2;color:#fff;font-size:34px;font-weight:700;line-height:1;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+.step .tx{padding:14px 18px 18px}.step h3{margin:0 0 4px}.step p{margin:0;color:var(--mute);font-size:16px}
+.banner{position:relative;height:190px;margin:0 calc(-1*clamp(16px,4vw,72px)) 24px;display:flex;align-items:flex-end;color:#fff;background-size:cover;background-position:center}
+.banner::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,42,74,.25),rgba(11,42,74,.88))}.banner div{position:relative;padding:0 clamp(16px,4vw,72px) 18px}
+.banner h2{color:#fff;margin:0;font-size:clamp(26px,3vw,38px)}.banner span{color:#dbe5f2;font-size:17px}
+.b-demo{background-image:url(/static/img/laptop-phone.jpg)}.b-impact{background-image:url(/static/img/dashboard.jpg)}.b-final{background-image:url(/static/img/analytics.jpg)}.b-arch{background-image:url(/static/img/office.jpg)}.b-limits{background-image:url(/static/img/seats.jpg)}
+.tl{position:relative;max-width:1180px;margin:10px auto 0;padding:10px 0}
+.tl::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;background:var(--line);transform:translateX(-50%)}
+.tl .prog{position:absolute;left:50%;top:0;width:3px;background:linear-gradient(var(--gold),var(--navy));transform:translateX(-50%);height:0;transition:height .15s linear}
+.ti{position:relative;width:50%;padding:0 46px 26px 0;opacity:0;transform:translateX(-40px);transition:opacity .7s,transform .7s}
+.ti.r{margin-left:50%;padding:0 0 26px 46px;transform:translateX(40px)}.ti.in{opacity:1;transform:none}
+.ti .dot{position:absolute;top:18px;right:-19px;width:38px;height:38px;border-radius:50%;background:#fff;border:3px solid var(--navy);color:var(--navy);font-weight:700;display:grid;place-items:center;z-index:2;font-size:17px}
+.ti.r .dot{right:auto;left:-19px}.ti.in .dot{animation:pulse 2.4s 1s infinite}
+.ti .cd{background:#fff;border:1px solid var(--line);border-left:5px solid var(--navy);border-radius:6px;padding:16px 20px;box-shadow:0 1px 3px rgba(11,42,74,.06);transition:box-shadow .3s,transform .3s}
+.ti .cd:hover{box-shadow:0 12px 28px rgba(11,42,74,.14);transform:translateY(-3px)}
+.ti h3{margin:2px 0 6px;font-size:20px}.ti p{margin:0;color:#333}.ti code{background:var(--soft);padding:1px 5px;border-radius:3px;font-family:Consolas,monospace;font-size:.85em}
+.tag{display:inline-block;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;padding:2px 10px;border-radius:99px;color:#fff;margin-bottom:6px}
+.c-model{border-left-color:#5b3df5}.c-model .tag{background:#5b3df5}.c-meas{border-left-color:#1b7f5c}.c-meas .tag{background:#1b7f5c}.c-data{border-left-color:#a8812c}.c-data .tag{background:#a8812c}.c-ops{border-left-color:#b3261e}.c-ops .tag{background:#b3261e}
+.fl{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0 0 16px}.fl button{border:1px solid var(--line);background:#fff;border-radius:99px;padding:6px 18px;cursor:pointer;color:var(--navy);font-weight:700;transition:all .25s}.fl button.on,.fl button:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(168,129,44,.5)}50%{box-shadow:0 0 0 10px rgba(168,129,44,0)}}@keyframes kb{from{transform:scale(1)}to{transform:scale(1.1) translate(-1.5%,-1.5%)}}
+@media(max-width:820px){.tl::before,.tl .prog{left:18px}.ti,.ti.r{width:100%;margin-left:0;padding:0 0 22px 52px}.ti .dot,.ti.r .dot{left:0;right:auto}header .heroimg{width:100%;opacity:.25}.band{background-attachment:scroll}}
 @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@keyframes draw{to{width:min(420px,60%)}}@keyframes pop{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
 @keyframes spin{to{transform:rotate(360deg)}}@keyframes shim{to{background-position:-200% 0}}@keyframes rowin{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
 @media(max-width:700px){.bar span{width:130px}.two{grid-template-columns:1fr}th,td{padding:6px}}
@@ -69,27 +99,30 @@ footer{border-top:1px solid var(--line);background:var(--soft);color:var(--mute)
 </style></head><body>
 <div class="topbar"><div class="pad"><span>Applied AI Engineering &middot; Research Prototype &middot; Decide &middot; Act &middot; Verify &middot; Measure</span>
 <span class="dev"><small>Developed by:</small> <b>Jarpula Nirjala</b></span></div></div>
-<header><div class="pad"><div class="crest"><i>&#9670;</i> Lifecycle Agent Programme</div>
+<header><div class="heroimg"></div><div class="pad"><div class="crest"><i>&#9670;</i> Lifecycle Agent Programme</div>
 <h1>One User, One Agent</h1>
 <p class="lead">Every viewer receives a dedicated agent that chooses one measurable goal, decides what to change (or to do nothing), acts within a strict latency budget, is checked by an independent verifier, and is judged against a randomized holdout.</p>
 <div class="rule"></div>
 <div class="chips"><span class="chip">Evidence with provenance</span><span class="chip">Independent verification</span><span class="chip">Safe degradation</span><span class="chip">Randomized holdout</span><span class="chip">Honest measurement</span></div></div></header>
 <nav><div class="pad"><button data-t="overview" class="on">Overview</button><button data-t="demo">Live Demo</button><button data-t="viewers">Viewers</button><button data-t="decisions">Decisions</button><button data-t="dashboard">Dashboard</button><button data-t="impact">Impact Report</button><button data-t="final">Final Report</button><button data-t="arch">Architecture</button><button data-t="limits">Limitations</button><span class="who" id="who"></span></div></nav>
 <main class="pad">
-<section id="overview" class="on"><p class="sec">Results of the replay</p><div class="grid" id="kpis"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
+<section id="overview" class="on">
+<div class="band rv"><div><h2>Built for viewers in smaller cities and towns</h2><p>Most visits are short: a viewer opens the app, scrolls and leaves. One agent per viewer decides, in seconds, what to change, or whether to leave them alone, and later proves whether it helped.</p></div></div>
+<p class="sec">How it works</p><h2 class="rv">The decision loop</h2>
+<div class="steps">
+<div class="step rv"><div class="ph"><img loading="lazy" alt="Analytics on a laptop" src="/static/img/analytics.jpg"><span class="no">01</span></div><div class="tx"><h3>Understand the viewer</h3><p>Every fact carries its source, time and freshness. Conflicts between profile, app setting and campaign link are resolved by explicit precedence and kept visible.</p></div></div>
+<div class="step rv"><div class="ph"><img loading="lazy" alt="A team planning together" src="/static/img/office.jpg"><span class="no">02</span></div><div class="tx"><h3>Choose one goal</h3><p>One measurable goal from the catalogue, with a deadline and a success signal, or an explained abstention. Unmeasurable goals are never chosen.</p></div></div>
+<div class="step rv"><div class="ph"><img loading="lazy" alt="Laptop and phone in use" src="/static/img/laptop-phone.jpg"><span class="no">03</span></div><div class="tx"><h3>Decide and act in time</h3><p>A personalised home page, one proportionate message, or nothing, inside a 60 second budget with at most 8 model and 20 tool calls.</p></div></div>
+<div class="step rv"><div class="ph"><img loading="lazy" alt="Circuit board close-up" src="/static/img/circuit.jpg"><span class="no">04</span></div><div class="tx"><h3>Verify independently</h3><p>A separate verifier checks eligibility, dialect, availability, consent, quiet hours, frequency, copy and holdout, and can reject any action.</p></div></div>
+<div class="step rv"><div class="ph"><img loading="lazy" alt="Server racks" src="/static/img/servers.jpg"><span class="no">05</span></div><div class="tx"><h3>Degrade safely</h3><p>When the model or the data store fails, a circuit breaker and cached facts keep decisions fast and safe. A smaller action beats a late or wrong one.</p></div></div>
+<div class="step rv"><div class="ph"><img loading="lazy" alt="Results dashboard" src="/static/img/dashboard.jpg"><span class="no">06</span></div><div class="tx"><h3>Prove the impact</h3><p>Intention-to-treat on randomized arms with confidence intervals. The biased served-versus-rest comparison is shown only for contrast.</p></div></div>
+</div>
+<p class="sec">Results of the replay</p><div class="grid" id="kpis"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
 <div class="two"><div class="card rv"><p class="sec">Behaviour</p><h2>What the agent did with each trigger</h2><div id="mix"></div></div>
 <div class="card rv"><p class="sec">Measurement</p><h2>Impact: agent versus randomized holdout</h2><div id="impact"></div><div id="pilot"></div></div></div>
-<div class="card rv"><p class="sec">How it works</p><h2>The decision loop</h2>
-<div class="grid" style="margin:0">
-<div><h3>1 &middot; Understand</h3><span class="mute">Facts carry source, time and freshness. Conflicts between profile, app setting and campaign link are resolved by explicit precedence and kept visible.</span></div>
-<div><h3>2 &middot; Choose a goal</h3><span class="mute">One measurable goal from the catalogue, with a deadline and a success signal, or an explained abstention. Unmeasurable goals are never chosen.</span></div>
-<div><h3>3 &middot; Decide and act</h3><span class="mute">A personalised home page, one proportionate message, or nothing, inside a 60 second and 8 model / 20 tool call budget.</span></div>
-<div><h3>4 &middot; Verify</h3><span class="mute">A separate verifier checks eligibility, dialect, availability, consent, quiet hours, frequency, copy and holdout, and can reject any action.</span></div>
-<div><h3>5 &middot; Close the loop</h3><span class="mute">Goals are judged from attributable events and the lessons are written back into each viewer's state.</span></div>
-<div><h3>6 &middot; Prove impact</h3><span class="mute">Intention-to-treat on randomized arms with confidence intervals. The biased served-versus-rest comparison is shown only for contrast.</span></div></div></div>
 <div class="callout">All figures come from replaying the supplied <b>synthetic</b> data pack. The raw pack is personal data and is not hosted here: this site serves only the run's outputs and a synthetic demonstration world.</div></section>
 
-<section id="demo"><div class="card"><p class="sec">Interactive</p><h2>Build a viewer and run the real agent</h2><p class="mute">The actual planner, verifier, model gateway and resilience code run on a synthetic catalogue. Change the situation and watch the goal, action, checks and fallbacks change.</p>
+<section id="demo"><div class="banner b-demo"><div><h2>Live demo</h2><span>Build a viewer and watch the real agent decide</span></div></div><div class="card"><p class="sec">Interactive</p><h2>Build a viewer and run the real agent</h2><p class="mute">The actual planner, verifier, model gateway and resilience code run on a synthetic catalogue. Change the situation and watch the goal, action, checks and fallbacks change.</p>
 <div class="form" id="form"></div><p style="margin-top:16px"><button class="b run" id="run">Run decision</button> <span class="mute" id="runmsg"></span></p></div><div id="demoout"></div></section>
 
 <section id="viewers"><div class="card"><p class="sec">Audit</p><h2>Viewer explorer</h2><input id="vq" placeholder="Search a viewer id, e.g. U-01991" size="38"> <span class="mute">1,800+ viewers: facts, goals, decisions, outcomes, learnings</span><div id="vlist" class="rowt" style="margin-top:12px"></div></div><div id="vout"></div></section>
@@ -101,19 +134,20 @@ footer{border-top:1px solid var(--line);background:var(--soft);color:var(--mute)
 <p><button class="b" id="prev">Previous</button> <button class="b" id="next">Next</button></p></div><div id="dout"></div></section>
 
 <section id="dashboard"><iframe id="dframe" title="dashboard" loading="lazy"></iframe></section>
-<section id="impactp"><div class="card doc" id="impactdoc"><div class="skel"></div><div class="skel"></div></div></section>
-<section id="finalp"><div class="card doc" id="finaldoc"><div class="skel"></div><div class="skel"></div></div></section>
-<section id="arch"><div class="card doc" id="archdoc"><div class="skel"></div><div class="skel"></div></div></section>
-<section id="limits"><div class="card doc" id="limdoc"><div class="skel"></div><div class="skel"></div></div></section>
+<section id="impactp"><div class="banner b-impact"><div><h2>Impact report</h2><span>Agent versus randomized holdout, honestly measured</span></div></div><div class="card doc" id="impactdoc"><div class="skel"></div><div class="skel"></div></div></section>
+<section id="finalp"><div class="banner b-final"><div><h2>Final report</h2><span>What happened, and every data issue we handled</span></div></div><div class="card doc" id="finaldoc"><div class="skel"></div><div class="skel"></div></div></section>
+<section id="arch"><div class="banner b-arch"><div><h2>Architecture</h2><span>Ownership, planning, memory, verification, latency, recovery</span></div></div><div class="card doc" id="archdoc"><div class="skel"></div><div class="skel"></div></div></section>
+<section id="limits"><div class="banner b-limits"><div><h2>Known limitations</h2><span>What was left incomplete on purpose, and why</span></div></div><div class="fl" id="fl"></div><div class="tl" id="tl"><div class="prog" id="prog"></div></div></section>
 </main>
-<footer><div class="pad">One User, One Agent &middot; Lifecycle agent research prototype &middot; Synthetic data only &middot; Built with the Python standard library.</div></footer>
+<footer><div class="pad">One User, One Agent &middot; Lifecycle agent research prototype &middot; Synthetic data only &middot; Built with the Python standard library &middot; Photographs: Unsplash.</div></footer>
 <script>
 const $=s=>document.querySelector(s),pct=x=>x==null?"n/a":(x*100).toFixed(1)+"%",pp=x=>(x>=0?"+":"")+(x*100).toFixed(1)+" pp";
 const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const J=async(u,o)=>{const r=await fetch(u,o);if(r.status==401){location.href="/signin";return {}}return r.json()};
 let ROLE="guest";
 fetch("/api/me").then(r=>r.json()).then(m=>{if(!m.signed_in){location.href="/signin";return}ROLE=m.role;
- $("#who").innerHTML=`<span class=pill>${m.role=="user"?"Signed in: "+esc(m.name):"Guest (read-only)"}</span><button id="out">Sign out</button>`;
+ $("#who").innerHTML=`<span class=pill>${m.role=="user"?"Welcome, "+esc(m.name):"Guest (read-only)"}</span>${m.role=="user"?"":'<button id="mk">Create account</button>'}<button id="out">Sign out</button>`;
+ if($("#mk"))$("#mk").onclick=async()=>{await fetch("/api/logout",{method:"POST"});location.href="/signin#register"};
  $("#out").onclick=async()=>{await fetch("/api/logout",{method:"POST"});location.href="/signin"}});
 // per-letter animation for the title
 (function(){const h=document.querySelector("h1");const t=h.textContent;h.setAttribute("aria-label",t);h.textContent="";
@@ -122,10 +156,24 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 const reveal=()=>document.querySelectorAll(".rv:not(.in)").forEach(e=>io.observe(e));reveal();
 function countUp(el,to,suffix){const dur=900,t0=performance.now(),dec=String(to).includes(".")?1:0;const f=t=>{const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);el.textContent=(to*e).toFixed(dec)+suffix;if(k<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
 const tabs={overview:"overview",demo:"demo",viewers:"viewers",decisions:"decisions",dashboard:"dashboard",impact:"impactp",final:"finalp",arch:"arch",limits:"limits"};
-const docs={impact:["#impactdoc","/api/report/impact"],final:["#finaldoc","/api/report/final"],arch:["#archdoc","/api/doc/ARCHITECTURE"],limits:["#limdoc","/api/doc/KNOWN_LIMITATIONS"]};
+const docs={impact:["#impactdoc","/api/report/impact"],final:["#finaldoc","/api/report/final"],arch:["#archdoc","/api/doc/ARCHITECTURE"]};
+const CAT=[["Model","c-model",/model|ladder|fault/i],["Measurement","c-meas",/effect|inconclusive|simulator/i],["Data","c-data",/interpret|never|trial|snapshot|windowed/i],["Operations","c-ops",/./]];
+const fmt=s=>esc(s).replace(/`([^`]+)`/g,"<code>$1</code>").replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>");
+let limLoaded=false;
+async function loadLimits(){if(limLoaded)return;limLoaded=true;const L=await J("/api/limits");
+ L.forEach(x=>{const c=CAT.find(c=>c[2].test(x.title));x.cat=c[0];x.cls=c[1]});
+ const cats=["All",...CAT.map(c=>c[0])];$("#fl").innerHTML=cats.map((c,i)=>`<button class="${i?"":"on"}" data-c="${c}">${c} (${c=="All"?L.length:L.filter(x=>x.cat==c).length})</button>`).join("");
+ const draw=f=>{const tl=$("#tl");tl.querySelectorAll(".ti").forEach(e=>e.remove());
+  L.filter(x=>f=="All"||x.cat==f).forEach((x,i)=>{const d=document.createElement("div");d.className="ti"+(i%2?" r":"");d.style.transitionDelay=(i%3*80)+"ms";
+   d.innerHTML=`<div class="dot">${x.n}</div><div class="cd ${x.cls}"><span class="tag">${x.cat}</span><h3>${esc(x.title)}</h3><p>${fmt(x.body)}</p></div>`;tl.appendChild(d);tio.observe(d)});onScroll()};
+ document.querySelectorAll("#fl button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#fl button").forEach(x=>x.classList.toggle("on",x===b));draw(b.dataset.c)});draw("All")}
+const tio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");tio.unobserve(e.target)}}),{threshold:.15});
+function onScroll(){const tl=$("#tl");if(!tl||!tl.offsetParent)return;const r=tl.getBoundingClientRect(),h=innerHeight;const p=Math.max(0,Math.min(r.height,h*.6-r.top));$("#prog").style.height=p+"px"}
+addEventListener("scroll",onScroll,{passive:true});
 document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll("section").forEach(s=>s.classList.toggle("on",s.id===tabs[b.dataset.t]));
  const t=b.dataset.t;if(t=="dashboard"&&!$("#dframe").getAttribute("src"))$("#dframe").src="/dashboard";
  if(docs[t]&&$(docs[t][0]).querySelector(".skel"))J(docs[t][1]).then(r=>$(docs[t][0]).innerHTML=r.html||"");
+ if(t=="limits")loadLimits();
  history.replaceState(null,"","#"+t);window.scrollTo({top:0,behavior:"smooth"});reveal()});
 J("/api/summary").then(s=>{const st=s.status,P=s.impact.primary,L=s.latency;
 const K=[[s.decisions,"Decisions",""],[s.viewers,"Viewers",""],[st.PUBLISHED||0,"Published decisions",""],[st.HOLDOUT_NO_ACTION||0,"Holdout (zero action)",""],[st.NO_ACTION_STALE||0,"Stale buffered opens skipped",""],[L.published_decisions.p95_s,"p95 decision latency"," s"],[L.over_slo_60s,"Decisions over 60 s",""],[s.safety.violations,"Safety violations",""]];

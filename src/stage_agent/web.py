@@ -38,44 +38,66 @@ def _inline(s: str) -> str:
 
 
 def md_to_html(md: str) -> str:
-    out, lines, i = [], md.split("\n"), 0
-    in_list = False
-    while i < len(lines):
+    """Headings, tables, bullet and numbered lists (wrapped lines joined), paragraphs, bold/italic/code. Everything escaped."""
+    lines = md.split("\n")
+    out, i, n = [], 0, len(lines)
+    structural = re.compile(r"^(#{1,4}\s|\|)")
+    item = re.compile(r"^(\s*)(?:[-*]|\d+\.)\s+(.*)")
+    while i < n:
         ln = lines[i]
-        if ln.startswith("|") and i + 1 < len(lines) and re.match(r"^\|[\s\-|:]+\|?$", lines[i + 1]):
+        if ln.startswith("|") and i + 1 < n and re.match(r"^\|[\s\-|:]+\|?$", lines[i + 1]):
             head = [c.strip() for c in ln.strip().strip("|").split("|")]
             out.append("<div class=tw><table><thead><tr>" + "".join("<th>%s</th>" % _inline(c) for c in head) + "</tr></thead><tbody>")
             i += 2
-            while i < len(lines) and lines[i].startswith("|"):
+            while i < n and lines[i].startswith("|"):
                 out.append("<tr>" + "".join("<td>%s</td>" % _inline(c.strip()) for c in lines[i].strip().strip("|").split("|")) + "</tr>")
                 i += 1
             out.append("</tbody></table></div>")
             continue
         m = re.match(r"^(#{1,4})\s+(.*)", ln)
         if m:
-            if in_list:
-                out.append("</ul>")
-                in_list = False
-            n = len(m.group(1))
-            out.append("<h%d>%s</h%d>" % (n + 1, _inline(m.group(2)), n + 1))
-        elif ln.startswith("- "):
-            if not in_list:
-                out.append("<ul>")
-                in_list = True
-            out.append("<li>%s</li>" % _inline(ln[2:]))
-        elif ln.strip() == "":
-            if in_list:
-                out.append("</ul>")
-                in_list = False
-        else:
-            if in_list:
-                out.append("</ul>")
-                in_list = False
-            out.append("<p>%s</p>" % _inline(ln))
+            k = len(m.group(1)) + 1
+            out.append("<h%d>%s</h%d>" % (k, _inline(m.group(2)), k))
+            i += 1
+            continue
+        m = item.match(ln)
+        if m:
+            ordered = bool(re.match(r"^\s*\d+\.", ln))
+            out.append("<ol>" if ordered else "<ul>")
+            while i < n and item.match(lines[i]):
+                text = [item.match(lines[i]).group(2)]
+                i += 1
+                while i < n and lines[i].strip() and not item.match(lines[i]) and not structural.match(lines[i]):
+                    text.append(lines[i].strip())
+                    i += 1
+                out.append("<li>%s</li>" % _inline(" ".join(text)))
+                while i < n and not lines[i].strip() and i + 1 < n and item.match(lines[i + 1]):
+                    i += 1
+            out.append("</ol>" if ordered else "</ul>")
+            continue
+        if not ln.strip():
+            i += 1
+            continue
+        para = [ln.strip()]
         i += 1
-    if in_list:
-        out.append("</ul>")
+        while i < n and lines[i].strip() and not structural.match(lines[i]) and not item.match(lines[i]):
+            para.append(lines[i].strip())
+            i += 1
+        out.append("<p>%s</p>" % _inline(" ".join(para)))
     return "\n".join(out)
+
+
+def parse_limits(md: str):
+    """KNOWN_LIMITATIONS.md -> [{n, title, body}] for the timeline view."""
+    items, cur = [], None
+    for ln in md.split("\n"):
+        m = re.match(r"^(\d+)\.\s+\*\*(.+?)\*\*\s*(.*)", ln)
+        if m:
+            cur = {"n": int(m.group(1)), "title": m.group(2).strip().rstrip("."), "body": m.group(3).strip()}
+            items.append(cur)
+        elif cur is not None and ln.strip() and not ln.startswith("#"):
+            cur["body"] = (cur["body"] + " " + ln.strip()).strip()
+    return items
 
 
 class State:
@@ -166,7 +188,7 @@ class H(BaseHTTPRequestHandler):
         if os.environ.get("QUIET") != "1":
             sys.stderr.write("%s - %s\n" % (self.address_string(), fmt % a))
 
-    def _send(self, code, body, ctype="application/json; charset=utf-8", extra=None):
+    def _send(self, code, body, ctype="application/json; charset=utf-8", extra=None, cache=None):
         if isinstance(body, (dict, list)):
             body = json.dumps(body, ensure_ascii=False, default=str)
         b = body.encode("utf-8") if isinstance(body, str) else body
@@ -176,7 +198,7 @@ class H(BaseHTTPRequestHandler):
         self.send_header("X-Content-Type-Options", "nosniff")
         self.send_header("X-Frame-Options", "SAMEORIGIN")
         self.send_header("Referrer-Policy", "same-origin")
-        self.send_header("Cache-Control", "no-store")
+        self.send_header("Cache-Control", cache or "no-store")
         for k, v in (extra or {}).items():
             self.send_header(k, v)
         self.end_headers()
@@ -211,6 +233,12 @@ class H(BaseHTTPRequestHandler):
         try:
             if path == "/healthz":
                 return self._send(200, {"ok": True})
+            m = re.fullmatch(r"/static/img/([a-z\-]+\.jpg)", path)
+            if m:   # public: the sign-in page needs its photo before anyone is signed in
+                fp = os.path.join(STATIC, "img", m.group(1))
+                if os.path.exists(fp):
+                    return self._send(200, open(fp, "rb").read(), "image/jpeg", cache="public, max-age=86400")
+                return self._send(404, {"error": "not found"})
             sess = self._session()
             if path == "/signin":
                 if sess:
@@ -228,6 +256,9 @@ class H(BaseHTTPRequestHandler):
                 return self._send(200, open(os.path.join(STATE.run, "dashboard.html"), encoding="utf-8").read(), "text/html; charset=utf-8")
             if path == "/api/summary":
                 return self._send(200, STATE.summary)
+            if path == "/api/limits":
+                root = os.path.abspath(os.path.join(HERE, "..", ".."))
+                return self._send(200, parse_limits(open(os.path.join(root, "KNOWN_LIMITATIONS.md"), encoding="utf-8").read()))
             if path == "/api/decisions":
                 return self._send(200, STATE.list_decisions(q))
             m = re.fullmatch(r"/api/decision/([A-Za-z0-9\-]+)", path)
@@ -276,12 +307,28 @@ class H(BaseHTTPRequestHandler):
                     if not AUTH.allow_guest:
                         return self._send(403, {"error": "guest access is disabled"})
                     return self._send(200, {"ok": True, "role": "guest"}, extra=self._set_cookie(AUTH.make_cookie("guest", "Guest"), AUTH.ttl))
-                if AUTH.check(str(b.get("username", ""))[:100], str(b.get("password", ""))[:200]):
+                ident, pw = str(b.get("username", ""))[:200], str(b.get("password", ""))[:200]
+                name = AUTH.username if AUTH.check(ident, pw) else (AUTH.users.verify(ident, pw) if AUTH.users else None)
+                if name:
                     AUTH.ok(ip)
-                    return self._send(200, {"ok": True, "role": "user"}, extra=self._set_cookie(AUTH.make_cookie("user", AUTH.username), AUTH.ttl))
+                    return self._send(200, {"ok": True, "role": "user", "name": name}, extra=self._set_cookie(AUTH.make_cookie("user", name), AUTH.ttl))
                 AUTH.fail(ip)
                 time.sleep(0.4)   # slow down guessing
-                return self._send(401, {"error": "incorrect username or password"})
+                known = AUTH.users and ident.strip().lower() in AUTH.users.users
+                return self._send(401, {"error": "incorrect password for this account" if known else "no account matches that username or email: create one below"})
+            if path == "/api/register":
+                ip = self._ip()
+                if AUTH.reg_blocked(ip):
+                    return self._send(429, {"error": "too many sign-up attempts from this network; try again later"})
+                if not AUTH.users:
+                    return self._send(503, {"error": "sign-up is unavailable"})
+                b = self._body(2000)
+                AUTH.reg_hit(ip)
+                ok, msg = AUTH.users.register(str(b.get("name", "")), str(b.get("email", "")), str(b.get("password", "")))
+                if not ok:
+                    return self._send(400, {"error": msg})
+                nm = str(b.get("name", "")).strip()[:60]
+                return self._send(200, {"ok": True, "role": "user", "name": nm}, extra=self._set_cookie(AUTH.make_cookie("user", nm), AUTH.ttl))
             if path == "/api/logout":
                 return self._send(200, {"ok": True}, extra=self._set_cookie("", 0))
             sess = self._session()
@@ -303,7 +350,9 @@ class H(BaseHTTPRequestHandler):
 def serve(host: str = "0.0.0.0", port: int = None, run_dir: str = None):
     global STATE, AUTH
     from .auth import Auth
+    from .users import UserStore
     STATE, AUTH = State(run_dir or find_run_dir()), Auth()
+    AUTH.users = UserStore()
     port = port or int(os.environ.get("PORT", "8000"))
     srv = ThreadingHTTPServer((host, port), H)
     print("serving %d decisions / %d viewers from %s on http://%s:%d" % (len(STATE.rows), len(STATE.index), STATE.run, host, port), flush=True)
