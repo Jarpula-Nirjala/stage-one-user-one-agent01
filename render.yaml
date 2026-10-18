@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: one-user-one-agent
+    runtime: python
+    plan: free
+    buildCommand: "echo 'no dependencies: standard library only'"
+    startCommand: "PYTHONPATH=src python -m stage_agent.web"
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: QUIET
+        value: "1"

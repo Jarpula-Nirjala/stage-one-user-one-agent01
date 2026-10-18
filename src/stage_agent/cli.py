@@ -214,6 +214,10 @@ def main(argv=None):
     p.add_argument("--workers", type=int, default=8)
     p.add_argument("--offset-h", type=float, default=3.0)
     p.set_defaults(fn=cmd_bench)
+    p = sub.add_parser("serve", help="live web app over sample_run (reads $PORT)")
+    p.add_argument("--run", default=None)
+    p.add_argument("--port", type=int, default=None)
+    p.set_defaults(fn=lambda a: __import__("stage_agent.web", fromlist=["serve"]).serve(port=a.port, run_dir=a.run))
     a = ap.parse_args(argv)
     a.fn(a)
 

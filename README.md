@@ -45,6 +45,20 @@ learning into the next.
 Open `sample_run/dashboard.html` in a browser (offline, no libraries) for the decision mix, impact forest plot, replay
 timeline with the injected incidents, latency histogram and a viewer-journey explorer.
 
+## Live website (deploy on Render)
+
+A standard-library web app serves the run's outputs plus a **live demo that runs the real agent** on a synthetic viewer you
+build in the browser (subscription, dialect conflicts, consent, offline-buffered opens, model faults, store outage, a
+purchase after the decision...). It never serves the raw data pack.
+
+```bash
+PYTHONPATH=src python -m stage_agent serve --port 8000      # then open http://localhost:8000
+```
+
+Render: New + > Blueprint > pick this repo (it reads `render.yaml`), or create a Web Service with build command
+`echo ok` and start command `PYTHONPATH=src python -m stage_agent.web`. No dependencies, health check `/healthz`.
+Tabs: overview, live demo, viewer explorer, decision browser, dashboard, impact report, final report, architecture, limitations.
+
 ## What is in `sample_run/`
 
 | file | content |

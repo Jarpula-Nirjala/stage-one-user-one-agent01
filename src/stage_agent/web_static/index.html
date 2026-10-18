@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>One User, One Agent</title>
+<meta name="description" content="A per-viewer lifecycle agent that picks a measurable goal, acts safely within a latency budget, verifies independently and proves impact against a randomized holdout.">
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#141b2d;--mute:#5d6882;--line:#e3e7f0;--a:#5b3df5;--a2:#7c5cff;--ok:#0f9d8a;--bad:#e5484d;--warn:#d98a00}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1220;--card:#151c2f;--ink:#e8ecf6;--mute:#9aa5bd;--line:#252f49;--a:#8c7bff;--a2:#a99bff;--ok:#3dd6c3;--bad:#ff7a80;--warn:#ffc457}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--a)}header{background:linear-gradient(135deg,#2a1b8c,#5b3df5 55%,#8c7bff);color:#fff;padding:34px 16px 26px}
+.w{max-width:1120px;margin:0 auto;padding:0 16px}header .w{padding:0}h1{margin:0 0 6px;font-size:30px;letter-spacing:-.4px}header p{margin:0;max-width:760px;opacity:.92}
+nav{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap}
+nav button{background:none;border:0;border-bottom:3px solid transparent;color:var(--mute);font:600 14px inherit;padding:13px 14px;cursor:pointer}
+nav button.on{color:var(--a);border-color:var(--a)}main{padding:22px 0 70px}section{display:none}section.on{display:block}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:14px}
+.k{font-size:25px;font-weight:700}.l{color:var(--mute);font-size:13px}h2{font-size:18px;margin:4px 0 10px}h3{font-size:15px;margin:14px 0 6px}
+.pill{display:inline-block;padding:1px 9px;border-radius:99px;font-size:12px;border:1px solid var(--line);color:var(--mute);margin-right:4px}.ok{color:var(--ok)}.bad{color:var(--bad)}
+.bar{display:flex;align-items:center;gap:8px;margin:4px 0;font-size:13px}.bar span{min-width:210px;color:var(--mute)}.bar i{display:block;height:13px;border-radius:4px;background:var(--a)}
+table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.tw{overflow-x:auto}
+input,select,button.b{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:8px 10px;font:inherit;max-width:100%}
+button.b{background:var(--a);color:#fff;border-color:var(--a);cursor:pointer;font-weight:600}button.b:hover{background:var(--a2)}
+.form{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.form label{display:flex;flex-direction:column;font-size:12px;color:var(--mute);gap:3px}
+.form label.c{flex-direction:row;align-items:center;gap:8px;color:var(--ink);font-size:14px}pre{white-space:pre-wrap;word-break:break-word;font-size:12px;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:10px;max-height:380px;overflow:auto}
+.rowt{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0}.t{border:1px solid var(--line);border-radius:8px;padding:3px 8px;font-size:12px;background:var(--bg)}.t.p{border-color:var(--warn)}
+.doc h2,.doc h3,.doc h4{margin-top:20px}.doc code{background:var(--bg);padding:1px 5px;border-radius:5px}.doc p,.doc li{max-width:900px}
+iframe{width:100%;height:1500px;border:0;border-radius:12px;background:var(--card)}.clk{cursor:pointer}.clk:hover{background:var(--bg)}
+@media(max-width:600px){h1{font-size:24px}.bar span{min-width:120px}}
+</style></head><body>
+<header><div class="w"><h1>One User, One Agent</h1>
+<p>Every viewer gets an agent that chooses one measurable goal, decides what to change (or nothing), acts inside a latency budget, is checked by an independent verifier, and is judged against a randomized holdout.</p></div></header>
+<nav><div class="w"><button data-t="overview" class="on">Overview</button><button data-t="demo">Live demo</button><button data-t="viewers">Viewers</button><button data-t="decisions">Decisions</button><button data-t="dashboard">Dashboard</button><button data-t="impact">Impact report</button><button data-t="final">Final report</button><button data-t="arch">Architecture</button><button data-t="limits">Limitations</button></div></nav>
+<main><div class="w">
+<section id="overview" class="on"><div class="grid" id="kpis"></div>
+<div class="card"><h2>What the agent did with each trigger (real pack replay)</h2><div id="mix"></div></div>
+<div class="card"><h2>Honest impact (intention-to-treat, agent vs holdout)</h2><div id="impact"></div></div>
+<div class="card"><h2>The pilot report, recomputed</h2><div id="pilot"></div></div>
+<div class="card l">All numbers come from replaying the supplied synthetic pack. The raw pack is personal data and is not hosted; this site serves only the run's outputs and a synthetic demo world.</div></section>
+
+<section id="demo"><div class="card"><h2>Build a viewer, run the real agent</h2><div class="l" style="margin-bottom:10px">Runs the actual planner, verifier, model gateway and resilience code on a synthetic catalogue. Change the situation and watch the goal, action, checks and fallbacks change.</div>
+<div class="form" id="form"></div><p><button class="b" id="run">Run decision</button> <span class="l" id="runmsg"></span></p></div><div id="demoout"></div></section>
+
+<section id="viewers"><div class="card"><h2>Viewer explorer</h2><input id="vq" placeholder="search a viewer id, e.g. U-01991" size="34"> <span class="l">1,800+ viewers with facts, goals, decisions, outcomes and learnings</span><div id="vlist" class="rowt"></div></div><div id="vout"></div></section>
+
+<section id="decisions"><div class="card"><h2>Decision browser</h2><div class="form" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+<label>Status<select id="fs"><option value="">any</option></select></label><label>Arm<select id="fa"><option value="">any</option><option>agent</option><option>holdout</option></select></label>
+<label>Goal<select id="fg"><option value="">any</option></select></label><label>Search<input id="fq" placeholder="viewer or reason"></label></div>
+<p><button class="b" id="fgo">Search</button> <span class="l" id="ftot"></span></p><div class="tw"><table><thead><tr><th>decision</th><th>viewer</th><th>arm</th><th>status</th><th>action</th><th>goal</th><th>conf</th><th>latency s</th><th>reason</th></tr></thead><tbody id="dbody"></tbody></table></div>
+<p><button class="b" id="prev">Prev</button> <button class="b" id="next">Next</button></p></div><div id="dout"></div></section>
+
+<section id="dashboard"><iframe id="dframe" title="dashboard" loading="lazy"></iframe></section>
+<section id="impactp"><div class="card doc" id="impactdoc"></div></section>
+<section id="finalp"><div class="card doc" id="finaldoc"></div></section>
+<section id="arch"><div class="card doc" id="archdoc"></div></section>
+<section id="limits"><div class="card doc" id="limdoc"></div></section>
+</div></main>
+<script>
+const $=s=>document.querySelector(s),pct=x=>x==null?"n/a":(x*100).toFixed(1)+"%",pp=x=>(x>=0?"+":"")+(x*100).toFixed(1)+" pp";
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const J=async(u,o)=>{const r=await fetch(u,o);return r.json()};
+const tabs={overview:"overview",demo:"demo",viewers:"viewers",decisions:"decisions",dashboard:"dashboard",impact:"impactp",final:"finalp",arch:"arch",limits:"limits"};
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll("section").forEach(s=>s.classList.toggle("on",s.id===tabs[b.dataset.t]));
+ const t=b.dataset.t;if(t=="dashboard"&&!$("#dframe").src)$("#dframe").src="/dashboard";
+ if(t=="impact"&&!$("#impactdoc").innerHTML)J("/api/report/impact").then(r=>$("#impactdoc").innerHTML=r.html);
+ if(t=="final"&&!$("#finaldoc").innerHTML)J("/api/report/final").then(r=>$("#finaldoc").innerHTML=r.html);
+ if(t=="arch"&&!$("#archdoc").innerHTML)J("/api/doc/ARCHITECTURE").then(r=>$("#archdoc").innerHTML=r.html||"");
+ if(t=="limits"&&!$("#limdoc").innerHTML)J("/api/doc/KNOWN_LIMITATIONS").then(r=>$("#limdoc").innerHTML=r.html||"");history.replaceState(null,"","#"+t)});
+// overview
+J("/api/summary").then(s=>{const st=s.status,P=s.impact.primary,L=s.latency;
+$("#kpis").innerHTML=[["Decisions",s.decisions],["Viewers",s.viewers],["Published",st.PUBLISHED||0],["Holdout (zero action)",st.HOLDOUT_NO_ACTION||0],["Stale opens skipped",st.NO_ACTION_STALE||0],["p95 latency",(L.published_decisions.p95_s)+" s"],["Over 60 s",L.over_slo_60s],["Safety violations",s.safety.violations]].map(k=>`<div class=card><div class=k>${k[1]}</div><div class=l>${k[0]}</div></div>`).join("");
+const m=Math.max(...Object.values(st));$("#mix").innerHTML=Object.entries(st).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<div class=bar><span>${k}</span><i style="width:${Math.max(2,v/m*55)}%"></i>${v}</div>`).join("");
+const sg=s.impact.stratified;$("#impact").innerHTML=`<p><b>${pct(P.agent_rate)}</b> agent vs <b>${pct(P.holdout_rate)}</b> holdout: <b>${pp(P.diff)}</b> (95% CI ${pp(P.lo)} to ${pp(P.hi)}), p = ${P.p.toFixed(2)}. ${P.lo>0?"A real uplift.":"The replay cannot tell the arms apart; the agent is a small lever and the report says so."}</p>
+<p class=l>Across simulator seeds: ${(s.impact.seeds||[]).map(x=>x.seed+" "+pp(x.primary.diff)).join(" | ")}. Precision-weighted across goals ${pp(sg[0])} [${pp(sg[1])}, ${pp(sg[2])}].</p>`;
+const pl=s.impact.pilot;if(pl)$("#pilot").innerHTML=`<p>Pilot report claims <b>+22.4 pp</b> comparing served users with everyone else. On the randomized arms the same data gives <b>${pp(pl.itt.diff)}</b> (95% CI ${pp(pl.itt.lo)} to ${pp(pl.itt.hi)}). Served users were simply the more active ones.</p>`;
+const fsx=$("#fs");Object.keys(st).sort().forEach(k=>fsx.insertAdjacentHTML("beforeend",`<option>${k}</option>`));const fg=$("#fg");Object.keys(s.goals_published).filter(k=>k!="null").sort().forEach(k=>fg.insertAdjacentHTML("beforeend",`<option>${k}</option>`))});
+// demo form
+const F=[["status","select",["never","trial_active","active","lapsed"],"Subscription (profile)"],["signup_days","number",200,"Signed up (days ago)"],["app_dialect","select",["d1","d2","d3","d4","NA","d7","null"],"App dialect on trigger"],["profile_dialect","select",["d1","d2","d3","d4"],"Profile dialect"],["deeplink_dialect","select",["","d1","d2","d3","d4"],"Campaign link dialect"],["language","select",["hin","en"],"App language"],["plays","number",3,"Plays in history"],["completes","number",1,"Completed episodes"],["days_since_last_play","number",5,"Days since last play"],["opens","number",6,"Past app opens"],["lapse_days_ago","number",5,"Lapsed (days ago, if lapsed)"],["hour_ist","number",15,"Hour of day (IST)"],["buffered_age_hours","number",0,"Open buffered offline (hours)"],["clock_skew_hours","number",0,"Phone clock error (hours)"],["purchase_after_min","number",0,"Purchase N min after (0=none)"],["model_mode","select",["normal","unsupported_claim","malformed","timeout","outage"],"Model behaviour"],["arm","select",["agent","holdout"],"Arm"]];
+const B=[["push","Push consent",true],["whatsapp","WhatsApp consent",false],["opted_out_push","Opt-out event for push",false],["store_down","Data store down",false],["send_duplicate","Deliver trigger twice",false]];
+$("#form").innerHTML=F.map(([k,t,v,l])=>t=="select"?`<label>${l}<select id="f_${k}">${v.map(o=>`<option>${o}</option>`).join("")}</select></label>`:`<label>${l}<input id="f_${k}" type=number value="${v}"></label>`).join("")+B.map(([k,l,v])=>`<label class=c><input type=checkbox id="b_${k}" ${v?"checked":""}> ${l}</label>`).join("");
+const presets={};
+function chips(titles){return titles.map(t=>`<span class="t ${t.premium?"p":""}" title="${t.type}${t.premium?" · premium":""}">${esc(t.name)}</span>`).join("")}
+$("#run").onclick=async()=>{const p={};F.forEach(([k,t])=>p[k]=$("#f_"+k).value);B.forEach(([k])=>p[k]=$("#b_"+k).checked);$("#runmsg").textContent="running...";
+ const r=await J("/api/demo",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(p)});$("#runmsg").textContent="";if(r.error){$("#demoout").innerHTML=`<div class=card>${esc(r.error)}</div>`;return}
+ const d=r.decision;let h=`<div class=card><h2>${esc(d.action)} <span class=pill>${esc(d.status)}</span></h2><p>Goal: <b>${esc(d.goal?d.goal.id+" ("+d.goal.name+")":"none committed")}</b>${d.goal?`, success: ${esc(d.goal.success.event)} ${esc(d.goal.success.condition)}, deadline ${esc(d.goal.deadline)}`:""}</p>
+ <p>Dialect: <b>${esc(d.dialect&&d.dialect.used)}</b> via ${esc(d.dialect&&d.dialect.source)}; conflicts: ${esc(JSON.stringify(d.dialect?d.dialect.conflicts:[]))}</p>
+ <p>Confidence <b>${d.confidence}</b><br><span class=l>${esc(d.confidence_reason)}</span></p>${d.no_action_reason?`<p><b>Why nothing:</b> ${esc(d.no_action_reason)}</p>`:""}
+ <p class=l>Latency ${d.latency_s}s · model calls ${d.model_calls} · tool calls ${d.tool_calls} · fallbacks: ${esc((d.fallback_used||[]).join(", ")||"none")}</p>
+ <p>Checks passed: <span class=ok>${esc((d.checks.passed||[]).join(", "))}</span><br>Failed: <span class=bad>${esc((d.checks.failed||[]).map(f=>f.check+" ("+f.detail+")").join("; ")||"none")}</span></p>
+ ${d.page_decision?`<p class=l>Page: ${esc(d.page_decision)}</p>`:""}${d.message_decision?`<p class=l>Message: ${esc(d.message_decision)}</p>`:""}</div>`;
+ (r.actions||[]).forEach(a=>{if(a.type=="home_page")h+=`<div class=card><h3>Home page (${esc(a.dialect)}, live 120 min)</h3>${a.hero?`<div class=l>Hero</div><div class=rowt>${chips([a.hero])}</div>`:""}${a.rows.map(x=>`<div class=l>${esc(x.row_type)}</div><div class=rowt>${chips(x.titles)}</div>`).join("")}</div>`;
+  else h+=`<div class=card><h3>${esc(a.type)} scheduled ${esc(a.send_at||"at next open")}</h3><pre>${esc(JSON.stringify(a.text||{template:a.template_id,variables:a.variables},null,1))}</pre></div>`});
+ if(r.duplicate_delivery)h+=`<div class=card><b>Duplicate delivery:</b> ${esc(r.duplicate_delivery.status)}, actions still ${r.duplicate_delivery.actions_after}</div>`;
+ if((r.revisions||[]).length)h+=`<div class=card><h3>Live revisions after the decision</h3><pre>${esc(JSON.stringify(r.revisions,null,1))}</pre></div>`;
+ if((r.injection_log||[]).length)h+=`<div class=card><h3>Injected catalogue text (logged, never obeyed)</h3><pre>${esc(JSON.stringify(r.injection_log[0],null,1))}</pre></div>`;
+ h+=`<div class=card><h3>Full decision JSON</h3><pre>${esc(JSON.stringify(d,null,1))}</pre></div>`;$("#demoout").innerHTML=h};
+// viewers
+let vt;$("#vq").oninput=()=>{clearTimeout(vt);vt=setTimeout(async()=>{const r=await J("/api/viewers?q="+encodeURIComponent($("#vq").value));$("#vlist").innerHTML=r.map(v=>`<span class="t clk" data-id="${v.id}">${v.id} · ${v.arm} · ${v.analysis_goal||"-"}</span>`).join("");document.querySelectorAll("#vlist .t").forEach(e=>e.onclick=()=>showViewer(e.dataset.id))},200)};
+async function showViewer(id){const v=await J("/api/viewer/"+id);if(v.error){$("#vout").innerHTML="<div class=card>not found</div>";return}
+ const ag=v.analysis_goal||{};let h=`<div class=card><h2>${esc(v.viewer_id)} <span class=pill>${esc(v.arm)}</span> <span class=pill>reference goal ${esc(ag.goal_id||"none")}</span></h2><div class=l>Facts as of last decision: dialect ${esc(v.last_facts&&v.last_facts.dialect)} via ${esc(v.last_facts&&v.last_facts.dialect_source)}, subscription ${esc(v.last_facts&&v.last_facts.subscription)} (${esc(v.last_facts&&v.last_facts.subscription_source)}); conflicts ${esc(JSON.stringify(v.last_facts?v.last_facts.conflicts:[]))}</div></div>`;
+ (v.decisions||[]).forEach(d=>{h+=`<div class="card"><b>${d.decision_id}</b> ${esc(d.trigger.deliver_at)} <span class=pill>${esc(d.status)}</span> <b>${esc(d.action)}</b><div class=l>${d.goal?"goal "+d.goal.id+" until "+d.goal.deadline:"no goal"} · conf ${d.confidence} · ${d.latency_s}s</div>${d.no_action_reason?`<div><i>${esc(d.no_action_reason)}</i></div>`:""}<div class=l>${esc(d.confidence_reason||"")}</div><div class=l>checks: <span class=ok>${esc((d.checks.passed||[]).join(", "))}</span> <span class=bad>${esc((d.checks.failed||[]).map(f=>f.check).join(", "))}</span> ${esc((d.fallback_used||[]).join(", "))}</div></div>`});
+ (v.outcomes||[]).forEach(o=>h+=`<div class=card><b>Outcome ${esc(o.goal_id)}: ${esc(o.judged)}</b><div class=l>${esc(o.reason)}</div></div>`);(v.learnings||[]).forEach(l=>h+=`<div class="card l">Learned: ${esc(l.lesson)} → ${esc(l.next_step_hint)}</div>`);$("#vout").innerHTML=h;window.scrollTo({top:$("#vout").offsetTop-60,behavior:"smooth"})}
+// decisions
+let off=0;async function load(){const q=new URLSearchParams({status:$("#fs").value,arm:$("#fa").value,goal:$("#fg").value,q:$("#fq").value,offset:off,limit:30});const r=await J("/api/decisions?"+q);$("#ftot").textContent=r.total+" decisions";
+ $("#dbody").innerHTML=r.rows.map(x=>`<tr class=clk data-id="${x.id}"><td>${x.id}</td><td>${x.viewer}</td><td>${x.arm}</td><td>${x.status}</td><td>${esc(x.action)}</td><td>${x.goal||""}</td><td>${x.conf??""}</td><td>${x.lat??""}</td><td>${esc(x.reason)}</td></tr>`).join("");
+ document.querySelectorAll("#dbody tr").forEach(e=>e.onclick=async()=>{const d=await J("/api/decision/"+e.dataset.id);$("#dout").innerHTML=`<div class=card><h3>${d.decision_id}</h3><pre>${esc(JSON.stringify(d,null,1))}</pre></div>`;window.scrollTo({top:$("#dout").offsetTop-60,behavior:"smooth"})})}
+$("#fgo").onclick=()=>{off=0;load()};$("#next").onclick=()=>{off+=30;load()};$("#prev").onclick=()=>{off=Math.max(0,off-30);load()};load();
+const h=location.hash.slice(1);if(h&&tabs[h]){document.querySelector(`nav button[data-t=${h}]`).click()}
+</script></body></html>
